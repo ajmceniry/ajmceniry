@@ -56,7 +56,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_92ba05b7add7a759a9483a96b1d534c6 {
+                #map_d8548aec820915290fece49224a49cbd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -82,19 +82,33 @@
       padding: 6px 10px;
       cursor: pointer;
     "
-    onclick="map_92ba05b7add7a759a9483a96b1d534c6.setView([20, -10], 2);">
+    onclick="map_d8548aec820915290fece49224a49cbd.setView([20, -10], 2);">
     Home
   </button>
 </div>
     
-            <div class="folium-map" id="map_92ba05b7add7a759a9483a96b1d534c6" ></div>
+<div style="position: fixed; bottom: 10px; left: 10px; z-index:9999;">
+  <button
+    style="
+      background-color: #fff; 
+      border: 2px solid #333; 
+      border-radius: 4px; 
+      padding: 6px 10px;
+      cursor: pointer;
+    "
+    onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfktAfgkANnIL67tznscDuzYo-kmf-2SPCEfFdun07QhpMp6w/viewform?usp=header', '_blank');">
+    Submit Comment
+  </button>
+</div>
+    
+            <div class="folium-map" id="map_d8548aec820915290fece49224a49cbd" ></div>
         
 </body>
 <script>
     
     
-            var map_92ba05b7add7a759a9483a96b1d534c6 = L.map(
-                "map_92ba05b7add7a759a9483a96b1d534c6",
+            var map_d8548aec820915290fece49224a49cbd = L.map(
+                "map_d8548aec820915290fece49224a49cbd",
                 {
                     center: [20.0, -10.0],
                     crs: L.CRS.EPSG3857,
@@ -112,7 +126,7 @@
 
         
     
-            var tile_layer_ee80ac8bbd89c222277e781e5c72549a = L.tileLayer(
+            var tile_layer_0a522082e8978b67e39a94ccfbace094 = L.tileLayer(
                 "https://tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token=S1pjZ6PZCmad4YMDroP2upZtnTAoVNt2wq3OOOdSWsbuKdyHIcnxhREUbaTr6dBh",
                 {
   "minZoom": 0,
@@ -129,10 +143,10 @@
             );
         
     
-            tile_layer_ee80ac8bbd89c222277e781e5c72549a.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
+            tile_layer_0a522082e8978b67e39a94ccfbace094.addTo(map_d8548aec820915290fece49224a49cbd);
         
     
-            var marker_cluster_6b4d21486ace961068532e8c10a7dd9b = L.markerClusterGroup(
+            var marker_cluster_ec35e1b0771cdb270adbb7b3b4a05f74 = L.markerClusterGroup(
                 {
   "spiderfyDistanceMultiplier": 2,
   "spiderfyOnEveryZoom": true,
@@ -141,10 +155,10 @@
             );
         
     
-            marker_cluster_6b4d21486ace961068532e8c10a7dd9b.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
+            marker_cluster_ec35e1b0771cdb270adbb7b3b4a05f74.addTo(map_d8548aec820915290fece49224a49cbd);
         
     
-            var marker_cluster_b76cb03edacb5487842743198219e831 = L.markerClusterGroup(
+            var marker_cluster_6557e7554fbde9b03c7cc717d03c351b = L.markerClusterGroup(
                 {
   "spiderfyDistanceMultiplier": 3,
   "spiderfyOnEveryZoom": true,
@@ -153,17 +167,17 @@
             );
         
     
-            marker_cluster_b76cb03edacb5487842743198219e831.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
+            marker_cluster_6557e7554fbde9b03c7cc717d03c351b.addTo(map_d8548aec820915290fece49224a49cbd);
         
     
-            var marker_cluster_2fe992a651fa2a421e558241c3c15aed = L.markerClusterGroup(
+            var marker_cluster_82d093569211c807a75e436b84a09dd1 = L.markerClusterGroup(
                 {
   "spiderfyDistanceMultiplier": 2,
   "spiderfyOnEveryZoom": true,
   "maxClusterRadius": 250,
 }
             );
-            marker_cluster_2fe992a651fa2a421e558241c3c15aed.options.iconCreateFunction =
+            marker_cluster_82d093569211c807a75e436b84a09dd1.options.iconCreateFunction =
                 function(cluster) {
             // "df-cluster" is a custom CSS class we'll define below
             return new L.DivIcon({
@@ -174,1009 +188,1009 @@
         };
         
     
-            var marker_44952ada413e5f3d09d7b6905f9f78e7 = L.marker(
+            var marker_7ffc2a131ad80b228a6e2d07e558d4e6 = L.marker(
                 [54.7023545, -3.2765753],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_a4c411a1286c25933d84758f6a95e56c = L.icon({
+        var custom_icon_a1aa3854ca1d71e3da27581d45997df6 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [63, 63],
 });
-        marker_44952ada413e5f3d09d7b6905f9f78e7.setIcon(custom_icon_a4c411a1286c25933d84758f6a95e56c);
+        marker_7ffc2a131ad80b228a6e2d07e558d4e6.setIcon(custom_icon_a1aa3854ca1d71e3da27581d45997df6);
         
     
-        var popup_3beb799f9432691ca8bbba786c98aa9d = L.popup({
+        var popup_5cd3fb5d44f5af261f78c9d4bd460461 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5a49ecede9aa0ad6030fc16d5624da00 = $(`<div id="html_5a49ecede9aa0ad6030fc16d5624da00" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Blackhillock, Phase I<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_3beb799f9432691ca8bbba786c98aa9d.setContent(html_5a49ecede9aa0ad6030fc16d5624da00);
+                var html_b386af445d19de14642ee0e86bb2169c = $(`<div id="html_b386af445d19de14642ee0e86bb2169c" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Blackhillock, Phase I<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_5cd3fb5d44f5af261f78c9d4bd460461.setContent(html_b386af445d19de14642ee0e86bb2169c);
             
         
 
-        marker_44952ada413e5f3d09d7b6905f9f78e7.bindPopup(popup_3beb799f9432691ca8bbba786c98aa9d)
+        marker_7ffc2a131ad80b228a6e2d07e558d4e6.bindPopup(popup_5cd3fb5d44f5af261f78c9d4bd460461)
         ;
 
         
     
     
-            var marker_d9b30616f1c6f63bf980b2328ba7b1ed = L.marker(
+            var marker_6656dba1e7527d0d9a9a65f376b56d6a = L.marker(
                 [54.7023545, -3.2765753],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_dab92328c5295dabab9d618abb7427eb = L.icon({
+        var custom_icon_f0c4d0e855bc226432ef078562777ad7 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [55, 55],
 });
-        marker_d9b30616f1c6f63bf980b2328ba7b1ed.setIcon(custom_icon_dab92328c5295dabab9d618abb7427eb);
+        marker_6656dba1e7527d0d9a9a65f376b56d6a.setIcon(custom_icon_f0c4d0e855bc226432ef078562777ad7);
         
     
-        var popup_5bc2f252d4e9ded5e9833bc47e929aee = L.popup({
+        var popup_7c432c36a5e0a74104d3a62f7f5f26ab = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_45c3438c62f6e911373786bd2c4b135c = $(`<div id="html_45c3438c62f6e911373786bd2c4b135c" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Blackhillock, Phase II<br>         <strong>Size (MW):</strong> 100<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_5bc2f252d4e9ded5e9833bc47e929aee.setContent(html_45c3438c62f6e911373786bd2c4b135c);
+                var html_16e0a0d2b5d85afd4ad1c9dc3373eb66 = $(`<div id="html_16e0a0d2b5d85afd4ad1c9dc3373eb66" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Blackhillock, Phase II<br>         <strong>Size (MW):</strong> 100<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_7c432c36a5e0a74104d3a62f7f5f26ab.setContent(html_16e0a0d2b5d85afd4ad1c9dc3373eb66);
             
         
 
-        marker_d9b30616f1c6f63bf980b2328ba7b1ed.bindPopup(popup_5bc2f252d4e9ded5e9833bc47e929aee)
+        marker_6656dba1e7527d0d9a9a65f376b56d6a.bindPopup(popup_7c432c36a5e0a74104d3a62f7f5f26ab)
         ;
 
         
     
     
-            var marker_00fce4118d93af82343f0d1b2e95bc91 = L.marker(
+            var marker_6f82f0ac436d86edb2d9cf4cb667cd19 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_7f1ceae0b646d6e165dc125bd8d33788 = L.icon({
+        var custom_icon_0297af6b58010744910a58262c9681b6 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [63, 63],
 });
-        marker_00fce4118d93af82343f0d1b2e95bc91.setIcon(custom_icon_7f1ceae0b646d6e165dc125bd8d33788);
+        marker_6f82f0ac436d86edb2d9cf4cb667cd19.setIcon(custom_icon_0297af6b58010744910a58262c9681b6);
         
     
-        var popup_f01184f18b0fcd74f40d1e5cb8ab49d2 = L.popup({
+        var popup_c4d1406d85baca53e390d4f05439ffbf = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_11033ead68feff1b0ab528a3773042db = $(`<div id="html_11033ead68feff1b0ab528a3773042db" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Blyth Battery<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_f01184f18b0fcd74f40d1e5cb8ab49d2.setContent(html_11033ead68feff1b0ab528a3773042db);
+                var html_668537a447ecc4f12c5c3e4d77f812f4 = $(`<div id="html_668537a447ecc4f12c5c3e4d77f812f4" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Blyth Battery<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_c4d1406d85baca53e390d4f05439ffbf.setContent(html_668537a447ecc4f12c5c3e4d77f812f4);
             
         
 
-        marker_00fce4118d93af82343f0d1b2e95bc91.bindPopup(popup_f01184f18b0fcd74f40d1e5cb8ab49d2)
+        marker_6f82f0ac436d86edb2d9cf4cb667cd19.bindPopup(popup_c4d1406d85baca53e390d4f05439ffbf)
         ;
 
         
     
     
-            var marker_d4393669461d31b4fe0e93e7ab801282 = L.marker(
+            var marker_684b9515a2770c7753dfd6cec3924bd3 = L.marker(
                 [51.1638175, 10.4478313],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_c17049d11cc214eac072ed4c092358d0 = L.icon({
+        var custom_icon_65d71d3ecd58d1c8046a5cc8ce2745de = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [32, 32],
 });
-        marker_d4393669461d31b4fe0e93e7ab801282.setIcon(custom_icon_c17049d11cc214eac072ed4c092358d0);
+        marker_684b9515a2770c7753dfd6cec3924bd3.setIcon(custom_icon_65d71d3ecd58d1c8046a5cc8ce2745de);
         
     
-        var popup_49c145661bef21b3970f200837ae6ec0 = L.popup({
+        var popup_9d90746ba1cbc5271662282c53b0901c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6588b4ca6fcac2be11884b49f5349dc0 = $(`<div id="html_6588b4ca6fcac2be11884b49f5349dc0" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Bordesholm<br>         <strong>Size (MW):</strong> 15<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_49c145661bef21b3970f200837ae6ec0.setContent(html_6588b4ca6fcac2be11884b49f5349dc0);
+                var html_f29cb8496dc09196de282fb4253261e4 = $(`<div id="html_f29cb8496dc09196de282fb4253261e4" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Bordesholm<br>         <strong>Size (MW):</strong> 15<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_9d90746ba1cbc5271662282c53b0901c.setContent(html_f29cb8496dc09196de282fb4253261e4);
             
         
 
-        marker_d4393669461d31b4fe0e93e7ab801282.bindPopup(popup_49c145661bef21b3970f200837ae6ec0)
+        marker_684b9515a2770c7753dfd6cec3924bd3.bindPopup(popup_9d90746ba1cbc5271662282c53b0901c)
         ;
 
         
     
     
-            var marker_74991450b62104be14d432bbd4fd0635 = L.marker(
+            var marker_ca72405d7cf806a03d7eab9ce6b02f22 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_10f0c56ef5a036dcaf4e2bb5096c96e1 = L.icon({
+        var custom_icon_289678426a5a224f6c13bac6ec176535 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [46, 46],
 });
-        marker_74991450b62104be14d432bbd4fd0635.setIcon(custom_icon_10f0c56ef5a036dcaf4e2bb5096c96e1);
+        marker_ca72405d7cf806a03d7eab9ce6b02f22.setIcon(custom_icon_289678426a5a224f6c13bac6ec176535);
         
     
-        var popup_a6b4cf1e4b3edd8bcf619772a15da1b9 = L.popup({
+        var popup_ec56627e2d2864a945378a6b56872f29 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1c35bf6db245af18cdf6a1a5ec10413a = $(`<div id="html_1c35bf6db245af18cdf6a1a5ec10413a" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Broken Hill BESS<br>         <strong>Size (MW):</strong> 50<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_a6b4cf1e4b3edd8bcf619772a15da1b9.setContent(html_1c35bf6db245af18cdf6a1a5ec10413a);
+                var html_fa486f9bdc0d2bbe9bf9a3350d9fc296 = $(`<div id="html_fa486f9bdc0d2bbe9bf9a3350d9fc296" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Broken Hill BESS<br>         <strong>Size (MW):</strong> 50<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_ec56627e2d2864a945378a6b56872f29.setContent(html_fa486f9bdc0d2bbe9bf9a3350d9fc296);
             
         
 
-        marker_74991450b62104be14d432bbd4fd0635.bindPopup(popup_a6b4cf1e4b3edd8bcf619772a15da1b9)
+        marker_ca72405d7cf806a03d7eab9ce6b02f22.bindPopup(popup_ec56627e2d2864a945378a6b56872f29)
         ;
 
         
     
     
-            var marker_1759180a49454178caf12894a36e8e8b = L.marker(
+            var marker_54ed7005a4ad9801f7d71ecf0b2140d5 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_d7c717c4afb319383268a629c301863c = L.icon({
+        var custom_icon_3447fb3114cd72fad2392856da8ae9c7 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [63, 63],
 });
-        marker_1759180a49454178caf12894a36e8e8b.setIcon(custom_icon_d7c717c4afb319383268a629c301863c);
+        marker_54ed7005a4ad9801f7d71ecf0b2140d5.setIcon(custom_icon_3447fb3114cd72fad2392856da8ae9c7);
         
     
-        var popup_e21c2188bca408cf31cdfeb0f8db8e9e = L.popup({
+        var popup_23213427774211a982c96c0bedcde03a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ed46fc0ab925a0a92ae99471c119c367 = $(`<div id="html_ed46fc0ab925a0a92ae99471c119c367" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Bungama BESS<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_e21c2188bca408cf31cdfeb0f8db8e9e.setContent(html_ed46fc0ab925a0a92ae99471c119c367);
+                var html_828bd08af3b3e3263ebeb59aef1c3f2a = $(`<div id="html_828bd08af3b3e3263ebeb59aef1c3f2a" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Bungama BESS<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_23213427774211a982c96c0bedcde03a.setContent(html_828bd08af3b3e3263ebeb59aef1c3f2a);
             
         
 
-        marker_1759180a49454178caf12894a36e8e8b.bindPopup(popup_e21c2188bca408cf31cdfeb0f8db8e9e)
+        marker_54ed7005a4ad9801f7d71ecf0b2140d5.bindPopup(popup_23213427774211a982c96c0bedcde03a)
         ;
 
         
     
     
-            var marker_e89de1becff8aab0cb3d64e3ff53d4e5 = L.marker(
+            var marker_32b8e1512afc30b737cb721e0df40ca2 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_c61dcd1aad4e39e15b7cbdc676accdac = L.icon({
+        var custom_icon_fb4396427ca82c2aed20a4cf1c4e6db2 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [40, 40],
 });
-        marker_e89de1becff8aab0cb3d64e3ff53d4e5.setIcon(custom_icon_c61dcd1aad4e39e15b7cbdc676accdac);
+        marker_32b8e1512afc30b737cb721e0df40ca2.setIcon(custom_icon_fb4396427ca82c2aed20a4cf1c4e6db2);
         
     
-        var popup_8175a2d3477dc95e1e4f40920c4d0c6d = L.popup({
+        var popup_3ea3f237be0be21aff0325d4772c7c24 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7d3085f0249152fa187b83139caa3563 = $(`<div id="html_7d3085f0249152fa187b83139caa3563" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Dalrymple<br>         <strong>Size (MW):</strong> 30<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_8175a2d3477dc95e1e4f40920c4d0c6d.setContent(html_7d3085f0249152fa187b83139caa3563);
+                var html_5616e6ff4e141e393466197e8abe6bb0 = $(`<div id="html_5616e6ff4e141e393466197e8abe6bb0" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Dalrymple<br>         <strong>Size (MW):</strong> 30<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_3ea3f237be0be21aff0325d4772c7c24.setContent(html_5616e6ff4e141e393466197e8abe6bb0);
             
         
 
-        marker_e89de1becff8aab0cb3d64e3ff53d4e5.bindPopup(popup_8175a2d3477dc95e1e4f40920c4d0c6d)
+        marker_32b8e1512afc30b737cb721e0df40ca2.bindPopup(popup_3ea3f237be0be21aff0325d4772c7c24)
         ;
 
         
     
     
-            var marker_5a112541199728293f21d809b595d0ff = L.marker(
+            var marker_7929f6b50bfe38ef30552983690a77b7 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_e37ec15ee594a54e6bc8c7f80e3a840d = L.icon({
+        var custom_icon_544bf37edc7bc0bf6a2bd1df3ae96e19 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [60, 60],
 });
-        marker_5a112541199728293f21d809b595d0ff.setIcon(custom_icon_e37ec15ee594a54e6bc8c7f80e3a840d);
+        marker_7929f6b50bfe38ef30552983690a77b7.setIcon(custom_icon_544bf37edc7bc0bf6a2bd1df3ae96e19);
         
     
-        var popup_e2fdb53fc5cdef47d548425de70b4795 = L.popup({
+        var popup_358912a9eed3acadcf7f8901b7e361f5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8f6c8d65069621465ffb92dd61674603 = $(`<div id="html_8f6c8d65069621465ffb92dd61674603" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Hornsdale Power Reserve<br>         <strong>Size (MW):</strong> 150<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_e2fdb53fc5cdef47d548425de70b4795.setContent(html_8f6c8d65069621465ffb92dd61674603);
+                var html_febbeb38b962df8406ff62b6d8c00945 = $(`<div id="html_febbeb38b962df8406ff62b6d8c00945" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Hornsdale Power Reserve<br>         <strong>Size (MW):</strong> 150<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_358912a9eed3acadcf7f8901b7e361f5.setContent(html_febbeb38b962df8406ff62b6d8c00945);
             
         
 
-        marker_5a112541199728293f21d809b595d0ff.bindPopup(popup_e2fdb53fc5cdef47d548425de70b4795)
+        marker_7929f6b50bfe38ef30552983690a77b7.bindPopup(popup_358912a9eed3acadcf7f8901b7e361f5)
         ;
 
         
     
     
-            var marker_50c671d6525251ce5121b6afce152967 = L.marker(
+            var marker_c426f50b6ee5b0635b972a0ad161f3fb = L.marker(
                 [19.593801499999998, -155.42837009716908],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_0aa005b2f141e9f86442c6def8bdb2ba = L.icon({
+        var custom_icon_614458ac176190913a39f87cd8f4ebb9 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [62, 62],
 });
-        marker_50c671d6525251ce5121b6afce152967.setIcon(custom_icon_0aa005b2f141e9f86442c6def8bdb2ba);
+        marker_c426f50b6ee5b0635b972a0ad161f3fb.setIcon(custom_icon_614458ac176190913a39f87cd8f4ebb9);
         
     
-        var popup_4a5a7715b9a36d6ac51292c660fd092a = L.popup({
+        var popup_753786a59e9804a9a3ef4b6e1ede76ac = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_df36bb935ab2eff08833dcb9ad049315 = $(`<div id="html_df36bb935ab2eff08833dcb9ad049315" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kapolei Energy Storage<br>         <strong>Size (MW):</strong> 185<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_4a5a7715b9a36d6ac51292c660fd092a.setContent(html_df36bb935ab2eff08833dcb9ad049315);
+                var html_b06f98a26db8219c7f4f4de6a229bfc5 = $(`<div id="html_b06f98a26db8219c7f4f4de6a229bfc5" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kapolei Energy Storage<br>         <strong>Size (MW):</strong> 185<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_753786a59e9804a9a3ef4b6e1ede76ac.setContent(html_b06f98a26db8219c7f4f4de6a229bfc5);
             
         
 
-        marker_50c671d6525251ce5121b6afce152967.bindPopup(popup_4a5a7715b9a36d6ac51292c660fd092a)
+        marker_c426f50b6ee5b0635b972a0ad161f3fb.bindPopup(popup_753786a59e9804a9a3ef4b6e1ede76ac)
         ;
 
         
     
     
-            var marker_eff81242cd8a86305f9de8244232ede1 = L.marker(
+            var marker_415b1a935ebcebfde6d6baa165b36e84 = L.marker(
                 [19.593801499999998, -155.42837009716908],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_bcb383148628cc2e2aeb15e6af4422f5 = L.icon({
+        var custom_icon_f901932fd2d5c2a0ccdc1df15d9afb48 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [31, 31],
 });
-        marker_eff81242cd8a86305f9de8244232ede1.setIcon(custom_icon_bcb383148628cc2e2aeb15e6af4422f5);
+        marker_415b1a935ebcebfde6d6baa165b36e84.setIcon(custom_icon_f901932fd2d5c2a0ccdc1df15d9afb48);
         
     
-        var popup_4ff5cee9e2dad0e58cbfeb2e9e4e483c = L.popup({
+        var popup_18ff8a09c88e84fb8329948a1372b94b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1ccbf650dc9ae6a1ef84d4fc68ccd1de = $(`<div id="html_1ccbf650dc9ae6a1ef84d4fc68ccd1de" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kauai PMRF<br>         <strong>Size (MW):</strong> 14<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_4ff5cee9e2dad0e58cbfeb2e9e4e483c.setContent(html_1ccbf650dc9ae6a1ef84d4fc68ccd1de);
+                var html_09e5cb97f06f4255d8bf470a5eeef622 = $(`<div id="html_09e5cb97f06f4255d8bf470a5eeef622" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kauai PMRF<br>         <strong>Size (MW):</strong> 14<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_18ff8a09c88e84fb8329948a1372b94b.setContent(html_09e5cb97f06f4255d8bf470a5eeef622);
             
         
 
-        marker_eff81242cd8a86305f9de8244232ede1.bindPopup(popup_4ff5cee9e2dad0e58cbfeb2e9e4e483c)
+        marker_415b1a935ebcebfde6d6baa165b36e84.bindPopup(popup_18ff8a09c88e84fb8329948a1372b94b)
         ;
 
         
     
     
-            var marker_9eaa3325b6d43de897b29bed88628725 = L.marker(
+            var marker_4f8ae7d03a90a33d30199812f796a5a9 = L.marker(
                 [54.7023545, -3.2765753],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_5d0603cf5ece5e4030f9f006c3fdbb3c = L.icon({
+        var custom_icon_d7d747ca12a87d3a4df068e17e6d0673 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [68, 68],
 });
-        marker_9eaa3325b6d43de897b29bed88628725.setIcon(custom_icon_5d0603cf5ece5e4030f9f006c3fdbb3c);
+        marker_4f8ae7d03a90a33d30199812f796a5a9.setIcon(custom_icon_d7d747ca12a87d3a4df068e17e6d0673);
         
     
-        var popup_003df790a4227f8d4a407a34326f4752 = L.popup({
+        var popup_2a080da6f79e39662e244b3f4d7d7760 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_60fa0220d37926d0aad202ff0ad7a680 = $(`<div id="html_60fa0220d37926d0aad202ff0ad7a680" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kilmarnock South<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_003df790a4227f8d4a407a34326f4752.setContent(html_60fa0220d37926d0aad202ff0ad7a680);
+                var html_5e703145421b8b750cc792e16e8771bb = $(`<div id="html_5e703145421b8b750cc792e16e8771bb" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kilmarnock South<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_2a080da6f79e39662e244b3f4d7d7760.setContent(html_5e703145421b8b750cc792e16e8771bb);
             
         
 
-        marker_9eaa3325b6d43de897b29bed88628725.bindPopup(popup_003df790a4227f8d4a407a34326f4752)
+        marker_4f8ae7d03a90a33d30199812f796a5a9.bindPopup(popup_2a080da6f79e39662e244b3f4d7d7760)
         ;
 
         
     
     
-            var marker_6222c5e4414dd8f5f33f9dd92bb3e741 = L.marker(
+            var marker_819637cc375679aa3e1476459eb1ff95 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_e255dc45ba90e08119502fb0080c8775 = L.icon({
+        var custom_icon_315dcc2770de7e884ab356c491a7716a = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [74, 74],
 });
-        marker_6222c5e4414dd8f5f33f9dd92bb3e741.setIcon(custom_icon_e255dc45ba90e08119502fb0080c8775);
+        marker_819637cc375679aa3e1476459eb1ff95.setIcon(custom_icon_315dcc2770de7e884ab356c491a7716a);
         
     
-        var popup_e08d98fedb7e95b1b5af3cdbfef08c81 = L.popup({
+        var popup_9fb6760e086d57f7cfb933c118837a0b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_336908ba27718c32e71e8d23c28a7ec6 = $(`<div id="html_336908ba27718c32e71e8d23c28a7ec6" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Liddell Battery<br>         <strong>Size (MW):</strong> 500<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_e08d98fedb7e95b1b5af3cdbfef08c81.setContent(html_336908ba27718c32e71e8d23c28a7ec6);
+                var html_56384289a8e988a5d7626f6c395bf89f = $(`<div id="html_56384289a8e988a5d7626f6c395bf89f" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Liddell Battery<br>         <strong>Size (MW):</strong> 500<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_9fb6760e086d57f7cfb933c118837a0b.setContent(html_56384289a8e988a5d7626f6c395bf89f);
             
         
 
-        marker_6222c5e4414dd8f5f33f9dd92bb3e741.bindPopup(popup_e08d98fedb7e95b1b5af3cdbfef08c81)
+        marker_819637cc375679aa3e1476459eb1ff95.bindPopup(popup_9fb6760e086d57f7cfb933c118837a0b)
         ;
 
         
     
     
-            var marker_598152b115e836778d4eb19462ee9678 = L.marker(
+            var marker_11f1fbe466280578bc1f82cd9012fbf4 = L.marker(
                 [43.6211955, -84.6824346],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_a82a5f0efe87c96d77aa0da525d0a33b = L.icon({
+        var custom_icon_86448c11c382772740c1587946712e8f = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/opxbhfzb4s8ma5oo1qwxh/HVDC.png?rlkey=aw1s4lmvq3jpyosue1sbu1jp4\u0026st=3m8k8s0i\u0026raw=1",
   "iconSize": [63, 63],
 });
-        marker_598152b115e836778d4eb19462ee9678.setIcon(custom_icon_a82a5f0efe87c96d77aa0da525d0a33b);
+        marker_11f1fbe466280578bc1f82cd9012fbf4.setIcon(custom_icon_86448c11c382772740c1587946712e8f);
         
     
-        var popup_115f1715a7612efa59c8978a5e36e625 = L.popup({
+        var popup_eac7183f9caf66bf35cfffe2540e5ab3 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_77efe82cb9e15769e7b54897f87e5d11 = $(`<div id="html_77efe82cb9e15769e7b54897f87e5d11" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Mackinac<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> HVDC back-to-back system     </div>     </div>`)[0];
-                popup_115f1715a7612efa59c8978a5e36e625.setContent(html_77efe82cb9e15769e7b54897f87e5d11);
+                var html_ddccbcee9058511d08c8f8524b0ae2af = $(`<div id="html_ddccbcee9058511d08c8f8524b0ae2af" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Mackinac<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> HVDC back-to-back system     </div>     </div>`)[0];
+                popup_eac7183f9caf66bf35cfffe2540e5ab3.setContent(html_ddccbcee9058511d08c8f8524b0ae2af);
             
         
 
-        marker_598152b115e836778d4eb19462ee9678.bindPopup(popup_115f1715a7612efa59c8978a5e36e625)
+        marker_11f1fbe466280578bc1f82cd9012fbf4.bindPopup(popup_eac7183f9caf66bf35cfffe2540e5ab3)
         ;
 
         
     
     
-            var marker_4a25dc8ce469bc52c527655e1833940b = L.marker(
+            var marker_d7cda9548cbc3e8342a7bb1a3a707205 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_7a7e590d942c078399a48b7aff2fb20e = L.icon({
+        var custom_icon_ef5afea403fde5a867af546460e68047 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [68, 68],
 });
-        marker_4a25dc8ce469bc52c527655e1833940b.setIcon(custom_icon_7a7e590d942c078399a48b7aff2fb20e);
+        marker_d7cda9548cbc3e8342a7bb1a3a707205.setIcon(custom_icon_ef5afea403fde5a867af546460e68047);
         
     
-        var popup_2d9ae526029a58357f386a23ea46057a = L.popup({
+        var popup_5bffd62e6135dca494747b4517d55be7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_fb87ef7a799a0c915b35d9b5830574a2 = $(`<div id="html_fb87ef7a799a0c915b35d9b5830574a2" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Mortlake BESS<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_2d9ae526029a58357f386a23ea46057a.setContent(html_fb87ef7a799a0c915b35d9b5830574a2);
+                var html_f0bc7786647fb47a23f93f09429f1e5d = $(`<div id="html_f0bc7786647fb47a23f93f09429f1e5d" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Mortlake BESS<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_5bffd62e6135dca494747b4517d55be7.setContent(html_f0bc7786647fb47a23f93f09429f1e5d);
             
         
 
-        marker_4a25dc8ce469bc52c527655e1833940b.bindPopup(popup_2d9ae526029a58357f386a23ea46057a)
+        marker_d7cda9548cbc3e8342a7bb1a3a707205.bindPopup(popup_5bffd62e6135dca494747b4517d55be7)
         ;
 
         
     
     
-            var marker_5f1643b4a81727476bac7f54639b81d2 = L.marker(
+            var marker_03f5c8e27e6be1d2408a564005a21bd9 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_eabb93129e76eb4a5cac31780b5c1313 = L.icon({
+        var custom_icon_806c87af198f7455bb2e475357beddce = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [46, 46],
 });
-        marker_5f1643b4a81727476bac7f54639b81d2.setIcon(custom_icon_eabb93129e76eb4a5cac31780b5c1313);
+        marker_03f5c8e27e6be1d2408a564005a21bd9.setIcon(custom_icon_806c87af198f7455bb2e475357beddce);
         
     
-        var popup_f8ea2d71028c5addaab995fea3011f8c = L.popup({
+        var popup_2af7edbd28ca50346e80bcccdb37d427 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0f2f7894e2d35edf7dd3e3db99e822eb = $(`<div id="html_0f2f7894e2d35edf7dd3e3db99e822eb" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> New England BESS<br>         <strong>Size (MW):</strong> 50<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_f8ea2d71028c5addaab995fea3011f8c.setContent(html_0f2f7894e2d35edf7dd3e3db99e822eb);
+                var html_a313247685585830b6b7965d3d0b9946 = $(`<div id="html_a313247685585830b6b7965d3d0b9946" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> New England BESS<br>         <strong>Size (MW):</strong> 50<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_2af7edbd28ca50346e80bcccdb37d427.setContent(html_a313247685585830b6b7965d3d0b9946);
             
         
 
-        marker_5f1643b4a81727476bac7f54639b81d2.bindPopup(popup_f8ea2d71028c5addaab995fea3011f8c)
+        marker_03f5c8e27e6be1d2408a564005a21bd9.bindPopup(popup_2af7edbd28ca50346e80bcccdb37d427)
         ;
 
         
     
     
-            var marker_0a1321ae0f3dcabd4f792db5f6a72f13 = L.marker(
+            var marker_da5082e6473b07fce794d7826f94fe71 = L.marker(
                 [19.593801499999998, -155.42837009716908],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_2bc46080945eed460edb88839ca619bc = L.icon({
+        var custom_icon_9b10e34ef4e9738442f28dbb108c0eff = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [30, 30],
 });
-        marker_0a1321ae0f3dcabd4f792db5f6a72f13.setIcon(custom_icon_2bc46080945eed460edb88839ca619bc);
+        marker_da5082e6473b07fce794d7826f94fe71.setIcon(custom_icon_9b10e34ef4e9738442f28dbb108c0eff);
         
     
-        var popup_6094cefff39e58f2a7a2f068f949592e = L.popup({
+        var popup_faccc59eca53c67e91279df11497119b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3644ef7387a35534d32545b1b0abffda = $(`<div id="html_3644ef7387a35534d32545b1b0abffda" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Project #1<br>         <strong>Size (MW):</strong> 13<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_6094cefff39e58f2a7a2f068f949592e.setContent(html_3644ef7387a35534d32545b1b0abffda);
+                var html_2164409e3bbf10c7dd8f5bcea28a57a0 = $(`<div id="html_2164409e3bbf10c7dd8f5bcea28a57a0" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Project #1<br>         <strong>Size (MW):</strong> 13<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_faccc59eca53c67e91279df11497119b.setContent(html_2164409e3bbf10c7dd8f5bcea28a57a0);
             
         
 
-        marker_0a1321ae0f3dcabd4f792db5f6a72f13.bindPopup(popup_6094cefff39e58f2a7a2f068f949592e)
+        marker_da5082e6473b07fce794d7826f94fe71.bindPopup(popup_faccc59eca53c67e91279df11497119b)
         ;
 
         
     
     
-            var marker_52455ebcdb058b71c37f10268a2cd9ef = L.marker(
+            var marker_c11f7512c9ba1d1256f84542d2f69a30 = L.marker(
                 [42.3788774, -72.032366],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_33593baba1e6f140990ef4bbbd898a68 = L.icon({
+        var custom_icon_d5455e511ec0aa9561564a699de8f8c4 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [38, 38],
 });
-        marker_52455ebcdb058b71c37f10268a2cd9ef.setIcon(custom_icon_33593baba1e6f140990ef4bbbd898a68);
+        marker_c11f7512c9ba1d1256f84542d2f69a30.setIcon(custom_icon_d5455e511ec0aa9561564a699de8f8c4);
         
     
-        var popup_9e97171acb54844aa619fc5ed2e5e16d = L.popup({
+        var popup_748ee74f2798480928950e576e1604a7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_53456b1e21b348c4c8696311b6403467 = $(`<div id="html_53456b1e21b348c4c8696311b6403467" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Provincetown BESS<br>         <strong>Size (MW):</strong> 25<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_9e97171acb54844aa619fc5ed2e5e16d.setContent(html_53456b1e21b348c4c8696311b6403467);
+                var html_273538e532421ea456bef49e006c896e = $(`<div id="html_273538e532421ea456bef49e006c896e" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Provincetown BESS<br>         <strong>Size (MW):</strong> 25<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_748ee74f2798480928950e576e1604a7.setContent(html_273538e532421ea456bef49e006c896e);
             
         
 
-        marker_52455ebcdb058b71c37f10268a2cd9ef.bindPopup(popup_9e97171acb54844aa619fc5ed2e5e16d)
+        marker_c11f7512c9ba1d1256f84542d2f69a30.bindPopup(popup_748ee74f2798480928950e576e1604a7)
         ;
 
         
     
     
-            var marker_35e08db7d1bf8ed9b9d4c8a5ed4d20a1 = L.marker(
+            var marker_983124727ee4bbdc47befedb6d0bbe65 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_42f173da27fee5e63d2e23123c0e1c8f = L.icon({
+        var custom_icon_af04d5b0dcb6783a9046c2f0e939afc1 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [60, 60],
 });
-        marker_35e08db7d1bf8ed9b9d4c8a5ed4d20a1.setIcon(custom_icon_42f173da27fee5e63d2e23123c0e1c8f);
+        marker_983124727ee4bbdc47befedb6d0bbe65.setIcon(custom_icon_af04d5b0dcb6783a9046c2f0e939afc1);
         
     
-        var popup_3766dc83cc64d83a585a6af92671b4cd = L.popup({
+        var popup_1e98e931c6678e3e7b5d7e2de08f5027 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d375597a2141c55e9bb3f1649cb61f72 = $(`<div id="html_d375597a2141c55e9bb3f1649cb61f72" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Riverina and Darlington Point<br>         <strong>Size (MW):</strong> 150<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_3766dc83cc64d83a585a6af92671b4cd.setContent(html_d375597a2141c55e9bb3f1649cb61f72);
+                var html_eaab36101743fcde6a08f0a6d668a7db = $(`<div id="html_eaab36101743fcde6a08f0a6d668a7db" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Riverina and Darlington Point<br>         <strong>Size (MW):</strong> 150<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_1e98e931c6678e3e7b5d7e2de08f5027.setContent(html_eaab36101743fcde6a08f0a6d668a7db);
             
         
 
-        marker_35e08db7d1bf8ed9b9d4c8a5ed4d20a1.bindPopup(popup_3766dc83cc64d83a585a6af92671b4cd)
+        marker_983124727ee4bbdc47befedb6d0bbe65.bindPopup(popup_1e98e931c6678e3e7b5d7e2de08f5027)
         ;
 
         
     
     
-            var marker_b0f0e985e935888ce65069599a684900 = L.marker(
+            var marker_ef614f6be596da7f55cadc7565e610ad = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_eb434ad834658950399676dcbe8f7213 = L.icon({
+        var custom_icon_a8dcbf7cdb6aee9ee8ee601ff80a7625 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [68, 68],
 });
-        marker_b0f0e985e935888ce65069599a684900.setIcon(custom_icon_eb434ad834658950399676dcbe8f7213);
+        marker_ef614f6be596da7f55cadc7565e610ad.setIcon(custom_icon_a8dcbf7cdb6aee9ee8ee601ff80a7625);
         
     
-        var popup_5c18ebd48d7ce42bc97f8d415cc8cac5 = L.popup({
+        var popup_591aeea844676f403dabd6ac78c1fd72 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_4b7dc2840ceb81b2c938694ac93346ff = $(`<div id="html_4b7dc2840ceb81b2c938694ac93346ff" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> TagEnergy BESS<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_5c18ebd48d7ce42bc97f8d415cc8cac5.setContent(html_4b7dc2840ceb81b2c938694ac93346ff);
+                var html_10b68c1cf4e83f85fce3f518d7b4ff7e = $(`<div id="html_10b68c1cf4e83f85fce3f518d7b4ff7e" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> TagEnergy BESS<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_591aeea844676f403dabd6ac78c1fd72.setContent(html_10b68c1cf4e83f85fce3f518d7b4ff7e);
             
         
 
-        marker_b0f0e985e935888ce65069599a684900.bindPopup(popup_5c18ebd48d7ce42bc97f8d415cc8cac5)
+        marker_ef614f6be596da7f55cadc7565e610ad.bindPopup(popup_591aeea844676f403dabd6ac78c1fd72)
         ;
 
         
     
     
-            var marker_69b01e3b557dae9f9f56256aeed2c6a5 = L.marker(
+            var marker_4f8baa35eedd25ba5070d16bde825132 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_4196f5fc11c75709e95dfb05f9d68310 = L.icon({
+        var custom_icon_a6d29ae558610cf8a0c6f6089d7e4209 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [55, 55],
 });
-        marker_69b01e3b557dae9f9f56256aeed2c6a5.setIcon(custom_icon_4196f5fc11c75709e95dfb05f9d68310);
+        marker_4f8baa35eedd25ba5070d16bde825132.setIcon(custom_icon_a6d29ae558610cf8a0c6f6089d7e4209);
         
     
-        var popup_7de6db1d869eea2da1cc9cae9066c799 = L.popup({
+        var popup_c77471cc286b4c810e23d69ec3b27d9b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ffe8988cbae552baf1ab428abaa1f611 = $(`<div id="html_ffe8988cbae552baf1ab428abaa1f611" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Terang BESS<br>         <strong>Size (MW):</strong> 100<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_7de6db1d869eea2da1cc9cae9066c799.setContent(html_ffe8988cbae552baf1ab428abaa1f611);
+                var html_d97ef045c38d4f310db540f9be4b06e5 = $(`<div id="html_d97ef045c38d4f310db540f9be4b06e5" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Terang BESS<br>         <strong>Size (MW):</strong> 100<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_c77471cc286b4c810e23d69ec3b27d9b.setContent(html_d97ef045c38d4f310db540f9be4b06e5);
             
         
 
-        marker_69b01e3b557dae9f9f56256aeed2c6a5.bindPopup(popup_7de6db1d869eea2da1cc9cae9066c799)
+        marker_4f8baa35eedd25ba5070d16bde825132.bindPopup(popup_c77471cc286b4c810e23d69ec3b27d9b)
         ;
 
         
     
     
-            var marker_0fd445baac91bcaf0e19b19f371e4481 = L.marker(
+            var marker_5731347180c06fdb358bf2d0e9eb5a25 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_728ef0f295c620f324b9b75aae7bb163 = L.icon({
+        var custom_icon_04bd2a733c13622ea6ec423e46ad8c84 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [68, 68],
 });
-        marker_0fd445baac91bcaf0e19b19f371e4481.setIcon(custom_icon_728ef0f295c620f324b9b75aae7bb163);
+        marker_5731347180c06fdb358bf2d0e9eb5a25.setIcon(custom_icon_04bd2a733c13622ea6ec423e46ad8c84);
         
     
-        var popup_e8d109fc9c43fee77500457c6b9c8d12 = L.popup({
+        var popup_b791ce2d0b37ff1558cab255c3b1f2b2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_e20c1c3564ca8d84152ff2c5981368d2 = $(`<div id="html_e20c1c3564ca8d84152ff2c5981368d2" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Victorian Big Battery<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_e8d109fc9c43fee77500457c6b9c8d12.setContent(html_e20c1c3564ca8d84152ff2c5981368d2);
+                var html_d2c1ef3efcfe79b7224b1f3354e70183 = $(`<div id="html_d2c1ef3efcfe79b7224b1f3354e70183" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Victorian Big Battery<br>         <strong>Size (MW):</strong> 300<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_b791ce2d0b37ff1558cab255c3b1f2b2.setContent(html_d2c1ef3efcfe79b7224b1f3354e70183);
             
         
 
-        marker_0fd445baac91bcaf0e19b19f371e4481.bindPopup(popup_e8d109fc9c43fee77500457c6b9c8d12)
+        marker_5731347180c06fdb358bf2d0e9eb5a25.bindPopup(popup_b791ce2d0b37ff1558cab255c3b1f2b2)
         ;
 
         
     
     
-            var marker_29e671cce17ccaaf8204167d9262855c = L.marker(
+            var marker_2272c6a1d6c3631ff358e2822d08f40a = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_768eb889ba814a6c1819e476ba2d89f7 = L.icon({
+        var custom_icon_1680cf672400fd1b82d03eb0ebabbb0b = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [46, 46],
 });
-        marker_29e671cce17ccaaf8204167d9262855c.setIcon(custom_icon_768eb889ba814a6c1819e476ba2d89f7);
+        marker_2272c6a1d6c3631ff358e2822d08f40a.setIcon(custom_icon_1680cf672400fd1b82d03eb0ebabbb0b);
         
     
-        var popup_f9e018f463ce5d1fdeaccc35e019a35c = L.popup({
+        var popup_e34a37a6f1f07248d1ca821ce4ab7455 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d153b7fc1ca22886b660ec1a5198db0a = $(`<div id="html_d153b7fc1ca22886b660ec1a5198db0a" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Wallgrove<br>         <strong>Size (MW):</strong> 50<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_f9e018f463ce5d1fdeaccc35e019a35c.setContent(html_d153b7fc1ca22886b660ec1a5198db0a);
+                var html_b3bd460c36759c010b005434e61ff0fe = $(`<div id="html_b3bd460c36759c010b005434e61ff0fe" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Wallgrove<br>         <strong>Size (MW):</strong> 50<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_e34a37a6f1f07248d1ca821ce4ab7455.setContent(html_b3bd460c36759c010b005434e61ff0fe);
             
         
 
-        marker_29e671cce17ccaaf8204167d9262855c.bindPopup(popup_f9e018f463ce5d1fdeaccc35e019a35c)
+        marker_2272c6a1d6c3631ff358e2822d08f40a.bindPopup(popup_e34a37a6f1f07248d1ca821ce4ab7455)
         ;
 
         
     
     
-            var marker_e350ad05e2836d3bd29d690d1c5f2108 = L.marker(
+            var marker_bbab7f5d6ec6c7ef9b6dbb0900231927 = L.marker(
                 [-24.7761086, 134.755],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_b3342bc7781817f6c2e56c50d2d39c8d = L.icon({
+        var custom_icon_f3fe64c8074c50e7c54c8141b7599d17 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [63, 63],
 });
-        marker_e350ad05e2836d3bd29d690d1c5f2108.setIcon(custom_icon_b3342bc7781817f6c2e56c50d2d39c8d);
+        marker_bbab7f5d6ec6c7ef9b6dbb0900231927.setIcon(custom_icon_f3fe64c8074c50e7c54c8141b7599d17);
         
     
-        var popup_f7ade70435ec2256171e8a878a889079 = L.popup({
+        var popup_809f706ee7811b52a02baebd2fa5054c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_fc2e8770a7d13992aeb47903246a2a42 = $(`<div id="html_fc2e8770a7d13992aeb47903246a2a42" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Western Downs Battery<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_f7ade70435ec2256171e8a878a889079.setContent(html_fc2e8770a7d13992aeb47903246a2a42);
+                var html_4d8c980d34b98d48778a74831585e35f = $(`<div id="html_4d8c980d34b98d48778a74831585e35f" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Western Downs Battery<br>         <strong>Size (MW):</strong> 200<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_809f706ee7811b52a02baebd2fa5054c.setContent(html_4d8c980d34b98d48778a74831585e35f);
             
         
 
-        marker_e350ad05e2836d3bd29d690d1c5f2108.bindPopup(popup_f7ade70435ec2256171e8a878a889079)
+        marker_bbab7f5d6ec6c7ef9b6dbb0900231927.bindPopup(popup_809f706ee7811b52a02baebd2fa5054c)
         ;
 
         
     
     
-            var marker_3aaa648bb300bd3e2986e2af8b859ff0 = L.marker(
+            var marker_23e400aa1662cf008f778d0336fb59f4 = L.marker(
                 [54.7023545, -3.2765753],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_17b48f7580d718bf2d571681433892a2 = L.icon({
+        var custom_icon_157d90514d93b621af5edbdb4c6a6d85 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [71, 71],
 });
-        marker_3aaa648bb300bd3e2986e2af8b859ff0.setIcon(custom_icon_17b48f7580d718bf2d571681433892a2);
+        marker_23e400aa1662cf008f778d0336fb59f4.setIcon(custom_icon_157d90514d93b621af5edbdb4c6a6d85);
         
     
-        var popup_b87534ceec91338ddeb325f8fcb4b81c = L.popup({
+        var popup_58143df18455bc81f9b026a9aa6656db = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0e8b83100f925778efc066dd219c052c = $(`<div id="html_0e8b83100f925778efc066dd219c052c" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Eccles<br>         <strong>Size (MW):</strong> 400<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_b87534ceec91338ddeb325f8fcb4b81c.setContent(html_0e8b83100f925778efc066dd219c052c);
+                var html_8316e0939eb7c39c5f6a46b5683a4fe2 = $(`<div id="html_8316e0939eb7c39c5f6a46b5683a4fe2" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Eccles<br>         <strong>Size (MW):</strong> 400<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_58143df18455bc81f9b026a9aa6656db.setContent(html_8316e0939eb7c39c5f6a46b5683a4fe2);
             
         
 
-        marker_3aaa648bb300bd3e2986e2af8b859ff0.bindPopup(popup_b87534ceec91338ddeb325f8fcb4b81c)
+        marker_23e400aa1662cf008f778d0336fb59f4.bindPopup(popup_58143df18455bc81f9b026a9aa6656db)
         ;
 
         
     
     
-            var marker_c2c55048dab34a205574f5c74676a6a0 = L.marker(
+            var marker_01dced5054763ac1acb05b9af1f9414a = L.marker(
                 [45.1960403, -63.1653789],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_c9549d07249023a0df64f0d7d9269b71 = L.icon({
+        var custom_icon_256b38c537a89b6b3961eb9de801b6f4 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/opxbhfzb4s8ma5oo1qwxh/HVDC.png?rlkey=aw1s4lmvq3jpyosue1sbu1jp4\u0026st=3m8k8s0i\u0026raw=1",
   "iconSize": [74, 74],
 });
-        marker_c2c55048dab34a205574f5c74676a6a0.setIcon(custom_icon_c9549d07249023a0df64f0d7d9269b71);
+        marker_01dced5054763ac1acb05b9af1f9414a.setIcon(custom_icon_256b38c537a89b6b3961eb9de801b6f4);
         
     
-        var popup_b65b65c753f87566225643abb20b429b = L.popup({
+        var popup_9fa52be542ff0c56a81d47c1a4847bac = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_56acbd8915fd3e38002d405b08ede791 = $(`<div id="html_56acbd8915fd3e38002d405b08ede791" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Maritime Link<br>         <strong>Size (MW):</strong> 500<br>         <strong>Technology:</strong> HVDC bipolar system     </div>     </div>`)[0];
-                popup_b65b65c753f87566225643abb20b429b.setContent(html_56acbd8915fd3e38002d405b08ede791);
+                var html_bbc0da4b170bcc41791ca1f47b412d0f = $(`<div id="html_bbc0da4b170bcc41791ca1f47b412d0f" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Maritime Link<br>         <strong>Size (MW):</strong> 500<br>         <strong>Technology:</strong> HVDC bipolar system     </div>     </div>`)[0];
+                popup_9fa52be542ff0c56a81d47c1a4847bac.setContent(html_bbc0da4b170bcc41791ca1f47b412d0f);
             
         
 
-        marker_c2c55048dab34a205574f5c74676a6a0.bindPopup(popup_b65b65c753f87566225643abb20b429b)
+        marker_01dced5054763ac1acb05b9af1f9414a.bindPopup(popup_9fa52be542ff0c56a81d47c1a4847bac)
         ;
 
         
     
     
-            var marker_118f206b17dbd9779a669c88cd7f5272 = L.marker(
+            var marker_f40e43c1733382a76e6135db8543d556 = L.marker(
                 [54.7023545, -3.2765753],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_2d86131a0929a1e3f5695ff76373aec2 = L.icon({
+        var custom_icon_c12863cded6c7c75e98701f0467b16f9 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [70, 70],
 });
-        marker_118f206b17dbd9779a669c88cd7f5272.setIcon(custom_icon_2d86131a0929a1e3f5695ff76373aec2);
+        marker_f40e43c1733382a76e6135db8543d556.setIcon(custom_icon_c12863cded6c7c75e98701f0467b16f9);
         
     
-        var popup_40317e5d5ae2015a6a58a1612cd90e56 = L.popup({
+        var popup_80a1f48196a5bd1397fe6071a81e72e5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_80c3e9985636bcce8cc7d2efc97464d1 = $(`<div id="html_80c3e9985636bcce8cc7d2efc97464d1" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Hams Hall<br>         <strong>Size (MW):</strong> 350<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_40317e5d5ae2015a6a58a1612cd90e56.setContent(html_80c3e9985636bcce8cc7d2efc97464d1);
+                var html_a23a82847c8f0d6fa9402a85d3a179b7 = $(`<div id="html_a23a82847c8f0d6fa9402a85d3a179b7" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Hams Hall<br>         <strong>Size (MW):</strong> 350<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_80a1f48196a5bd1397fe6071a81e72e5.setContent(html_a23a82847c8f0d6fa9402a85d3a179b7);
             
         
 
-        marker_118f206b17dbd9779a669c88cd7f5272.bindPopup(popup_40317e5d5ae2015a6a58a1612cd90e56)
+        marker_f40e43c1733382a76e6135db8543d556.bindPopup(popup_80a1f48196a5bd1397fe6071a81e72e5)
         ;
 
         
     
     
-            var marker_d4e862624506dd5f56425b9b05e8556e = L.marker(
+            var marker_c454b36773747cf06c64382f8af55f8c = L.marker(
                 [55.73476515, 9.128473055975835],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_f599c391858a689cba673b57e42d4230 = L.icon({
+        var custom_icon_fb182e9017cf1511010702c13ff502f4 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/opxbhfzb4s8ma5oo1qwxh/HVDC.png?rlkey=aw1s4lmvq3jpyosue1sbu1jp4\u0026st=3m8k8s0i\u0026raw=1",
   "iconSize": [72, 72],
 });
-        marker_d4e862624506dd5f56425b9b05e8556e.setIcon(custom_icon_f599c391858a689cba673b57e42d4230);
+        marker_c454b36773747cf06c64382f8af55f8c.setIcon(custom_icon_fb182e9017cf1511010702c13ff502f4);
         
     
-        var popup_154d4ce40593dee7d1a335c2b496e728 = L.popup({
+        var popup_813df390907a2d93e64f1ee8568d2140 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ea430cde4779d5b66b6c7b9cc7e9c0a6 = $(`<div id="html_ea430cde4779d5b66b6c7b9cc7e9c0a6" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kriegers Flak<br>         <strong>Size (MW):</strong> 410<br>         <strong>Technology:</strong> HVDC back-to-back system     </div>     </div>`)[0];
-                popup_154d4ce40593dee7d1a335c2b496e728.setContent(html_ea430cde4779d5b66b6c7b9cc7e9c0a6);
+                var html_ec32c343e615a7743e7aee7b305d9475 = $(`<div id="html_ec32c343e615a7743e7aee7b305d9475" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kriegers Flak<br>         <strong>Size (MW):</strong> 410<br>         <strong>Technology:</strong> HVDC back-to-back system     </div>     </div>`)[0];
+                popup_813df390907a2d93e64f1ee8568d2140.setContent(html_ec32c343e615a7743e7aee7b305d9475);
             
         
 
-        marker_d4e862624506dd5f56425b9b05e8556e.bindPopup(popup_154d4ce40593dee7d1a335c2b496e728)
+        marker_c454b36773747cf06c64382f8af55f8c.bindPopup(popup_813df390907a2d93e64f1ee8568d2140)
         ;
 
         
     
     
-            var marker_e741c1f42393705516347ac6ffb7c64d = L.marker(
+            var marker_6862a5303f23a9b98144a9d7e8704954 = L.marker(
                 [19.593801499999998, -155.42837009716908],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_45c5c870dab2088900f7c366353ab88c = L.icon({
+        var custom_icon_ead60a3c2a3e39c9fdc14249181dc54c = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [44, 44],
 });
-        marker_e741c1f42393705516347ac6ffb7c64d.setIcon(custom_icon_45c5c870dab2088900f7c366353ab88c);
+        marker_6862a5303f23a9b98144a9d7e8704954.setIcon(custom_icon_ead60a3c2a3e39c9fdc14249181dc54c);
         
     
-        var popup_1fb5432e20ad6b3e490b714219b25873 = L.popup({
+        var popup_8d1a7d0387616ccfc2fd55cd70aba342 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_28d8461c5d0c0d7217135cceb35cbcb2 = $(`<div id="html_28d8461c5d0c0d7217135cceb35cbcb2" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kupono Solar<br>         <strong>Size (MW):</strong> 42<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_1fb5432e20ad6b3e490b714219b25873.setContent(html_28d8461c5d0c0d7217135cceb35cbcb2);
+                var html_d4fa27bae477c04a4334c1baef3d5e82 = $(`<div id="html_d4fa27bae477c04a4334c1baef3d5e82" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Kupono Solar<br>         <strong>Size (MW):</strong> 42<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_8d1a7d0387616ccfc2fd55cd70aba342.setContent(html_d4fa27bae477c04a4334c1baef3d5e82);
             
         
 
-        marker_e741c1f42393705516347ac6ffb7c64d.bindPopup(popup_1fb5432e20ad6b3e490b714219b25873)
+        marker_6862a5303f23a9b98144a9d7e8704954.bindPopup(popup_8d1a7d0387616ccfc2fd55cd70aba342)
         ;
 
         
     
     
-            var marker_97bcc5c30728f5c33169addea884a72c = L.marker(
+            var marker_be51ea5645a26947d4b53b8153d69599 = L.marker(
                 [19.593801499999998, -155.42837009716908],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_317bed4c0565a4dc690fcb4273597d81 = L.icon({
+        var custom_icon_62f2e20b607c754f53331ab033d54988 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xpoqgxzbjah6a9w3ohswn/BESS.png?rlkey=w48q1unijhtucola3ymwj3a3q\u0026st=o1h57mnl\u0026raw=1",
   "iconSize": [30, 30],
 });
-        marker_97bcc5c30728f5c33169addea884a72c.setIcon(custom_icon_317bed4c0565a4dc690fcb4273597d81);
+        marker_be51ea5645a26947d4b53b8153d69599.setIcon(custom_icon_62f2e20b607c754f53331ab033d54988);
         
     
-        var popup_50b3466385eb68c76a4c2b60689fb48b = L.popup({
+        var popup_9dcd2ae80240da8f92bc0da83666b384 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_acdfde878c590306f5c87f15a321bcaa = $(`<div id="html_acdfde878c590306f5c87f15a321bcaa" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Mountain View Solar<br>         <strong>Size (MW):</strong> 7<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
-                popup_50b3466385eb68c76a4c2b60689fb48b.setContent(html_acdfde878c590306f5c87f15a321bcaa);
+                var html_badaa5cb83b24d31a6c043f7705fcad6 = $(`<div id="html_badaa5cb83b24d31a6c043f7705fcad6" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Mountain View Solar<br>         <strong>Size (MW):</strong> 7<br>         <strong>Technology:</strong> BESS     </div>     </div>`)[0];
+                popup_9dcd2ae80240da8f92bc0da83666b384.setContent(html_badaa5cb83b24d31a6c043f7705fcad6);
             
         
 
-        marker_97bcc5c30728f5c33169addea884a72c.bindPopup(popup_50b3466385eb68c76a4c2b60689fb48b)
+        marker_be51ea5645a26947d4b53b8153d69599.bindPopup(popup_9dcd2ae80240da8f92bc0da83666b384)
         ;
 
         
     
     
-            var marker_b557fe61f77598d78d62afe2abaed5fd = L.marker(
+            var marker_cfdba97957bf1cc2c532dc92803080fd = L.marker(
                 [40.7127281, -74.0060152],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_04aa729b5edc8f87bbaff277152cdfbf = L.icon({
+        var custom_icon_800944b747efb098cc03ed113a10b135 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/2q5xi9bvmfp1lzwqtxgii/STATCOM.png?rlkey=jrqo0rifs421eia8n8a8xbfs1\u0026st=j2ddg4ex\u0026raw=1",
   "iconSize": [51, 51],
 });
-        marker_b557fe61f77598d78d62afe2abaed5fd.setIcon(custom_icon_04aa729b5edc8f87bbaff277152cdfbf);
+        marker_cfdba97957bf1cc2c532dc92803080fd.setIcon(custom_icon_800944b747efb098cc03ed113a10b135);
         
     
-        var popup_703aa7e43e58d81bb45bb5c84510f6db = L.popup({
+        var popup_be04ebd015fe2dff107329ec5a74e47f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_94784f2a67ba96199da7629236d6637f = $(`<div id="html_94784f2a67ba96199da7629236d6637f" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> South Fork Wind<br>         <strong>Size (MW):</strong> 75<br>         <strong>Technology:</strong> GFM STATCOM     </div>     </div>`)[0];
-                popup_703aa7e43e58d81bb45bb5c84510f6db.setContent(html_94784f2a67ba96199da7629236d6637f);
+                var html_f448ec29cd84decaeaf8a4e3656bfe2b = $(`<div id="html_f448ec29cd84decaeaf8a4e3656bfe2b" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> South Fork Wind<br>         <strong>Size (MW):</strong> 75<br>         <strong>Technology:</strong> GFM STATCOM     </div>     </div>`)[0];
+                popup_be04ebd015fe2dff107329ec5a74e47f.setContent(html_f448ec29cd84decaeaf8a4e3656bfe2b);
             
         
 
-        marker_b557fe61f77598d78d62afe2abaed5fd.bindPopup(popup_703aa7e43e58d81bb45bb5c84510f6db)
+        marker_cfdba97957bf1cc2c532dc92803080fd.bindPopup(popup_be04ebd015fe2dff107329ec5a74e47f)
         ;
 
         
     
     
-            var marker_bd92489f7b4bd14a9e46e647a7efe8d0 = L.marker(
+            var marker_e75ea1a637dfd779d6f07b2a4943069f = L.marker(
                 [19.593801499999998, -155.42837009716908],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_e031f52c8de1e74915aa3396bd13fad0 = L.icon({
+        var custom_icon_b7e6de37f16e9723164e8b8f747bd9b3 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/g15859jp3lcemz78fbjc2/solar_battery_wind.png?rlkey=1k3vv0wy6laqt3yv2disj0zw6\u0026st=gr8ogmk1\u0026raw=1",
   "iconSize": [40, 40],
 });
-        marker_bd92489f7b4bd14a9e46e647a7efe8d0.setIcon(custom_icon_e031f52c8de1e74915aa3396bd13fad0);
+        marker_e75ea1a637dfd779d6f07b2a4943069f.setIcon(custom_icon_b7e6de37f16e9723164e8b8f747bd9b3);
         
     
-        var popup_734856a01d2e92c38292b65ca09a274f = L.popup({
+        var popup_7ad8624601fc7e793bf01f0b7ec8b229 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1f64da7f455cedc4dca9924de177f101 = $(`<div id="html_1f64da7f455cedc4dca9924de177f101" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Waiawa Phase 2 Solar<br>         <strong>Size (MW):</strong> 30<br>         <strong>Technology:</strong> nan     </div>     </div>`)[0];
-                popup_734856a01d2e92c38292b65ca09a274f.setContent(html_1f64da7f455cedc4dca9924de177f101);
+                var html_cb553480faa99da9943280a97265f2a6 = $(`<div id="html_cb553480faa99da9943280a97265f2a6" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Waiawa Phase 2 Solar<br>         <strong>Size (MW):</strong> 30<br>         <strong>Technology:</strong> nan     </div>     </div>`)[0];
+                popup_7ad8624601fc7e793bf01f0b7ec8b229.setContent(html_cb553480faa99da9943280a97265f2a6);
             
         
 
-        marker_bd92489f7b4bd14a9e46e647a7efe8d0.bindPopup(popup_734856a01d2e92c38292b65ca09a274f)
+        marker_e75ea1a637dfd779d6f07b2a4943069f.bindPopup(popup_7ad8624601fc7e793bf01f0b7ec8b229)
         ;
 
         
     
     
-            var marker_495ee2e52a682ab0226187eeccecf65f = L.marker(
+            var marker_1daf0b79af37ea8096f170bfefb6f140 = L.marker(
                 [43.9792797, -120.737257],
                 {
 }
-            ).addTo(marker_cluster_2fe992a651fa2a421e558241c3c15aed);
+            ).addTo(marker_cluster_82d093569211c807a75e436b84a09dd1);
         
     
-        var custom_icon_e0409c15151d1304e8972e46370dd062 = L.icon({
+        var custom_icon_b39e53d5f487cdd4186b4fc03890e342 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/g15859jp3lcemz78fbjc2/solar_battery_wind.png?rlkey=1k3vv0wy6laqt3yv2disj0zw6\u0026st=gr8ogmk1\u0026raw=1",
   "iconSize": [71, 71],
 });
-        marker_495ee2e52a682ab0226187eeccecf65f.setIcon(custom_icon_e0409c15151d1304e8972e46370dd062);
+        marker_1daf0b79af37ea8096f170bfefb6f140.setIcon(custom_icon_b39e53d5f487cdd4186b4fc03890e342);
         
     
-        var popup_17f65d21de14dd4ff395513300e070dd = L.popup({
+        var popup_d8621e58f561595065c452981f02a383 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ca41b08c2896aa557548a7eca9f15ebb = $(`<div id="html_ca41b08c2896aa557548a7eca9f15ebb" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Wheatridge Renewable Energy Facility<br>         <strong>Size (MW):</strong> 380<br>         <strong>Technology:</strong> Wind, solar, battery     </div>     </div>`)[0];
-                popup_17f65d21de14dd4ff395513300e070dd.setContent(html_ca41b08c2896aa557548a7eca9f15ebb);
+                var html_eb76c56bdeebd37fd2b57f86e215c23b = $(`<div id="html_eb76c56bdeebd37fd2b57f86e215c23b" style="width: 100.0%; height: 100.0%;">     <div style="font-size: 14px;">         <strong>Project Name:</strong> Wheatridge Renewable Energy Facility<br>         <strong>Size (MW):</strong> 380<br>         <strong>Technology:</strong> Wind, solar, battery     </div>     </div>`)[0];
+                popup_d8621e58f561595065c452981f02a383.setContent(html_eb76c56bdeebd37fd2b57f86e215c23b);
             
         
 
-        marker_495ee2e52a682ab0226187eeccecf65f.bindPopup(popup_17f65d21de14dd4ff395513300e070dd)
+        marker_1daf0b79af37ea8096f170bfefb6f140.bindPopup(popup_d8621e58f561595065c452981f02a383)
         ;
 
         
     
     
-            marker_cluster_2fe992a651fa2a421e558241c3c15aed.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
+            marker_cluster_82d093569211c807a75e436b84a09dd1.addTo(map_d8548aec820915290fece49224a49cbd);
         
     
-            var marker_cluster_e2241eb60737d243300ce56b390f251c = L.markerClusterGroup(
+            var marker_cluster_40fafcb7a9c983195550996b7569b379 = L.markerClusterGroup(
                 {
   "spiderfyDistanceMultiplier": 3,
   "spiderfyOnEveryZoom": true,
   "maxClusterRadius": 300,
 }
             );
-            marker_cluster_e2241eb60737d243300ce56b390f251c.options.iconCreateFunction =
+            marker_cluster_40fafcb7a9c983195550996b7569b379.options.iconCreateFunction =
                 function(cluster) {
             // "df2-cluster" is a custom CSS class for the second cluster
             return new L.DivIcon({
@@ -1187,755 +1201,740 @@
         };
         
     
-            var marker_01800dd65a0d0277552a73b0c4975b33 = L.marker(
+            var marker_b04fe605aae95f9ad6f4694b5d7dd824 = L.marker(
                 [50.5039, 4.4699],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_8167f92255faeb9fce0b8fd45ea6b54b = L.icon({
+        var custom_icon_f6a7dd8a0f91199d1a0c2c4194677099 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/4d9g5hwf5boz77yy3wzvb/MIGRATE_P1.png?rlkey=yjp7ocsh0qs576y9b3l19omun\u0026st=4kbyt4es\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_01800dd65a0d0277552a73b0c4975b33.setIcon(custom_icon_8167f92255faeb9fce0b8fd45ea6b54b);
+        marker_b04fe605aae95f9ad6f4694b5d7dd824.setIcon(custom_icon_f6a7dd8a0f91199d1a0c2c4194677099);
         
     
-        var popup_06ac6c335155cf762e7b6e54ed561657 = L.popup({
+        var popup_0dc9f2c1109a3754c86c5ff17b54e460 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_751c1d13a27f162556bd975f58196aec = $(`<div id="html_751c1d13a27f162556bd975f58196aec" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> MIGRATE.P1<br>             <strong>Link:</strong> <a href='https://cordis.europa.eu/project/id/691800' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_06ac6c335155cf762e7b6e54ed561657.setContent(html_751c1d13a27f162556bd975f58196aec);
+                var html_08befcabceea44631d9bca780d12ea99 = $(`<div id="html_08befcabceea44631d9bca780d12ea99" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> MIGRATE.P1<br>             <strong>Link:</strong> <a href='https://cordis.europa.eu/project/id/691800' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_0dc9f2c1109a3754c86c5ff17b54e460.setContent(html_08befcabceea44631d9bca780d12ea99);
             
         
 
-        marker_01800dd65a0d0277552a73b0c4975b33.bindPopup(popup_06ac6c335155cf762e7b6e54ed561657)
+        marker_b04fe605aae95f9ad6f4694b5d7dd824.bindPopup(popup_0dc9f2c1109a3754c86c5ff17b54e460)
         ;
 
         
     
     
-            var marker_f960cd286c90af9812be82c8ea230f1a = L.marker(
+            var marker_8ab6fda97354d64f8d2de8b3fb93d6eb = L.marker(
                 [18.8987, -155.6659],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_ac0135d5fc60e341fde0faa8b34c2328 = L.icon({
+        var custom_icon_f8314c87f775fa3a27e95d8470012e37 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/45uuu8ihswzl84h2l7eq0/HECO_P1.png?rlkey=rbxcwlqf1osjv8vaib1smcdxb\u0026st=zii3pc20\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_f960cd286c90af9812be82c8ea230f1a.setIcon(custom_icon_ac0135d5fc60e341fde0faa8b34c2328);
+        marker_8ab6fda97354d64f8d2de8b3fb93d6eb.setIcon(custom_icon_f8314c87f775fa3a27e95d8470012e37);
         
     
-        var popup_ff93d7d9c27e88ea2bc3c4629ed06eb4 = L.popup({
+        var popup_c194a5154703a3f91a197728425b69fe = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_043df257a58b8aa0c60abca29df41c91 = $(`<div id="html_043df257a58b8aa0c60abca29df41c91" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> HECO.P1<br>             <strong>Link:</strong> <a href='https://www.hawaiianelectric.com/documents/clean_energy_hawaii/producing_clean_energy/competitive_bidding/20190418_phase_2_model_esppa.docx' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_ff93d7d9c27e88ea2bc3c4629ed06eb4.setContent(html_043df257a58b8aa0c60abca29df41c91);
+                var html_3e8a54854e9ce361032c6183caa915dd = $(`<div id="html_3e8a54854e9ce361032c6183caa915dd" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> HECO.P1<br>             <strong>Link:</strong> <a href='https://www.hawaiianelectric.com/documents/clean_energy_hawaii/producing_clean_energy/competitive_bidding/20190418_phase_2_model_esppa.docx' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_c194a5154703a3f91a197728425b69fe.setContent(html_3e8a54854e9ce361032c6183caa915dd);
             
         
 
-        marker_f960cd286c90af9812be82c8ea230f1a.bindPopup(popup_ff93d7d9c27e88ea2bc3c4629ed06eb4)
+        marker_8ab6fda97354d64f8d2de8b3fb93d6eb.bindPopup(popup_c194a5154703a3f91a197728425b69fe)
         ;
 
         
     
     
-            var marker_ca9e22bc9dbafa98a777856f3ae958ef = L.marker(
+            var marker_8dc74e7d60aa745bf4334ea686216c20 = L.marker(
                 [39.7474, -105.1282],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_7ff428e156da1279ffa04b60aed9186c = L.icon({
+        var custom_icon_71bf3171180153d3b3142b023e264e52 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/k0qd334yh5uu0pt6fzzpq/NREL_P1.png?rlkey=qvhjoo2pf6fwwg9u9r9alwjek\u0026st=vdlfzlr1\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_ca9e22bc9dbafa98a777856f3ae958ef.setIcon(custom_icon_7ff428e156da1279ffa04b60aed9186c);
+        marker_8dc74e7d60aa745bf4334ea686216c20.setIcon(custom_icon_71bf3171180153d3b3142b023e264e52);
         
     
-        var popup_a19b071c6757efb4c4be89d3b26ab794 = L.popup({
+        var popup_588e7b976863c964271a0c12693e3550 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5956be82f1c0c5f573201eb81f63d9a0 = $(`<div id="html_5956be82f1c0c5f573201eb81f63d9a0" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NREL.P1<br>             <strong>Link:</strong> <a href='https://www.nrel.gov/docs/fy21osti/73476.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_a19b071c6757efb4c4be89d3b26ab794.setContent(html_5956be82f1c0c5f573201eb81f63d9a0);
+                var html_4c6307dd11364aa031b7ffbb1df229c5 = $(`<div id="html_4c6307dd11364aa031b7ffbb1df229c5" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NREL.P1<br>             <strong>Link:</strong> <a href='https://www.nrel.gov/docs/fy21osti/73476.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_588e7b976863c964271a0c12693e3550.setContent(html_4c6307dd11364aa031b7ffbb1df229c5);
             
         
 
-        marker_ca9e22bc9dbafa98a777856f3ae958ef.bindPopup(popup_a19b071c6757efb4c4be89d3b26ab794)
+        marker_8dc74e7d60aa745bf4334ea686216c20.bindPopup(popup_588e7b976863c964271a0c12693e3550)
         ;
 
         
     
     
-            var marker_28da43b0b11c8dd780a3ea8bce2f5648 = L.marker(
+            var marker_77f0fa0ecf37fcd7185b7c824d441dee = L.marker(
                 [50.5039, 4.4699],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_470ba7224869f1fa96aec39e00fe655d = L.icon({
+        var custom_icon_de2a43daaf43aa191faab39d0c4601ff = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/c77oyuigf0wi8mgz0sdl7/ENTSO-E_P1.png?rlkey=q5kgqk4ruqbfxxyxso3u98pmr\u0026st=8htbb8qo\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_28da43b0b11c8dd780a3ea8bce2f5648.setIcon(custom_icon_470ba7224869f1fa96aec39e00fe655d);
+        marker_77f0fa0ecf37fcd7185b7c824d441dee.setIcon(custom_icon_de2a43daaf43aa191faab39d0c4601ff);
         
     
-        var popup_96c0737040c36d4d964db4ca59b7c7d0 = L.popup({
+        var popup_1faefb6fadc9e1d3a8f009f285d19602 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a02170955127f9613474a26dd4a22077 = $(`<div id="html_a02170955127f9613474a26dd4a22077" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ENTSO-E.P1<br>             <strong>Link:</strong> <a href='https://eepublicdownloads.entsoe.eu/clean-documents/Publications/SOC/High_Penetration_of_Power_Electronic_Interfaced_Power_Sources_and_the_Potential_Contribution_of_Grid_Forming_Converters.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_96c0737040c36d4d964db4ca59b7c7d0.setContent(html_a02170955127f9613474a26dd4a22077);
+                var html_6147e442552b4ee763f75d330cd5308c = $(`<div id="html_6147e442552b4ee763f75d330cd5308c" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ENTSO-E.P1<br>             <strong>Link:</strong> <a href='https://eepublicdownloads.entsoe.eu/clean-documents/Publications/SOC/High_Penetration_of_Power_Electronic_Interfaced_Power_Sources_and_the_Potential_Contribution_of_Grid_Forming_Converters.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_1faefb6fadc9e1d3a8f009f285d19602.setContent(html_6147e442552b4ee763f75d330cd5308c);
             
         
 
-        marker_28da43b0b11c8dd780a3ea8bce2f5648.bindPopup(popup_96c0737040c36d4d964db4ca59b7c7d0)
+        marker_77f0fa0ecf37fcd7185b7c824d441dee.bindPopup(popup_1faefb6fadc9e1d3a8f009f285d19602)
         ;
 
         
     
     
-            var marker_0c286699be627f515c3e987ed67e8dd9 = L.marker(
+            var marker_861c632273756027a9ee5197e99b0f89 = L.marker(
                 [50.1109, 8.6821],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_fad7d8d1bfdff82de28123259f6be468 = L.icon({
+        var custom_icon_2ff0010a5f861e1bd9fa954050b9e825 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/1liwsktq0ugc2pe95oaiq/VDE-FNN_P1.png?rlkey=if0qypdanb75zb8p014zdj4yt\u0026st=wunz6u9w\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_0c286699be627f515c3e987ed67e8dd9.setIcon(custom_icon_fad7d8d1bfdff82de28123259f6be468);
+        marker_861c632273756027a9ee5197e99b0f89.setIcon(custom_icon_2ff0010a5f861e1bd9fa954050b9e825);
         
     
-        var popup_e477022181574261f75da373434df26f = L.popup({
+        var popup_8f1a17ce9a0213dc700f5f2eee904506 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5466cfe42f2fe95bfd49a9ef2e26a40e = $(`<div id="html_5466cfe42f2fe95bfd49a9ef2e26a40e" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> VDE FNN.P1<br>             <strong>Link:</strong> <a href='https://www.vde.com/en/fnn/dokumente-en' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_e477022181574261f75da373434df26f.setContent(html_5466cfe42f2fe95bfd49a9ef2e26a40e);
+                var html_f106dc59b1f15c33226fba207a66085b = $(`<div id="html_f106dc59b1f15c33226fba207a66085b" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> VDE FNN.P1<br>             <strong>Link:</strong> <a href='https://www.vde.com/en/fnn/dokumente-en' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_8f1a17ce9a0213dc700f5f2eee904506.setContent(html_f106dc59b1f15c33226fba207a66085b);
             
         
 
-        marker_0c286699be627f515c3e987ed67e8dd9.bindPopup(popup_e477022181574261f75da373434df26f)
+        marker_861c632273756027a9ee5197e99b0f89.bindPopup(popup_8f1a17ce9a0213dc700f5f2eee904506)
         ;
 
         
     
     
-            var marker_069fc7d43a88e7f92ef154646cb9598e = L.marker(
+            var marker_fda5391343b58f3cb322d9c59a0a6a63 = L.marker(
                 [52.2823, -1.5849],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_82a66ecb2f3b3d8248ef470469f2d59d = L.icon({
+        var custom_icon_069bf1c998020d2740f854884d36f55c = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/tdt10n90b43s7q5poproq/NGESO_P1.png?rlkey=mah4r8dok2hh11m344lekwawh\u0026st=h4aprzq6\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_069fc7d43a88e7f92ef154646cb9598e.setIcon(custom_icon_82a66ecb2f3b3d8248ef470469f2d59d);
+        marker_fda5391343b58f3cb322d9c59a0a6a63.setIcon(custom_icon_069bf1c998020d2740f854884d36f55c);
         
     
-        var popup_cee096e7e2114f4587ef40a7bad13948 = L.popup({
+        var popup_689eb6547a9f5e0d97a5a262113ece82 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7004084655842021f4839762c27a93f1 = $(`<div id="html_7004084655842021f4839762c27a93f1" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NGESO.P1<br>             <strong>Link:</strong> <a href='https://www.neso.energy/document/189381/download' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_cee096e7e2114f4587ef40a7bad13948.setContent(html_7004084655842021f4839762c27a93f1);
+                var html_0f5f358a55fbd7037bae59146e08c8c5 = $(`<div id="html_0f5f358a55fbd7037bae59146e08c8c5" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NGESO.P1<br>             <strong>Link:</strong> <a href='https://www.neso.energy/document/189381/download' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_689eb6547a9f5e0d97a5a262113ece82.setContent(html_0f5f358a55fbd7037bae59146e08c8c5);
             
         
 
-        marker_069fc7d43a88e7f92ef154646cb9598e.bindPopup(popup_cee096e7e2114f4587ef40a7bad13948)
+        marker_fda5391343b58f3cb322d9c59a0a6a63.bindPopup(popup_689eb6547a9f5e0d97a5a262113ece82)
         ;
 
         
     
     
-            var marker_4eb744cde3ee3d861d0439a5345f87e8 = L.marker(
+            var marker_f98392ac3d6a59f966c9c8a3b84f3f7b = L.marker(
                 [-37.8136, 144.9631],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_ff6ed9e996362a8b1ac8e7261b1dcd58 = L.icon({
+        var custom_icon_427e170737c13c920a18f88dd0c97a64 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/ui4oc22kbtrqxoccqf6b5/AEMO_P1.png?rlkey=408i6fvzel8hootg9q1nlo0rz\u0026st=4tgbx5d6\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_4eb744cde3ee3d861d0439a5345f87e8.setIcon(custom_icon_ff6ed9e996362a8b1ac8e7261b1dcd58);
+        marker_f98392ac3d6a59f966c9c8a3b84f3f7b.setIcon(custom_icon_427e170737c13c920a18f88dd0c97a64);
         
     
-        var popup_7459bb294ca96520ab37b0d29b472352 = L.popup({
+        var popup_0b6b3c969745c71002006c67998a5609 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a4f6f551a5a61e95040d9c50b9dff103 = $(`<div id="html_a4f6f551a5a61e95040d9c50b9dff103" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> AEMO.P1<br>             <strong>Link:</strong> <a href='https://aemo.com.au/-/media/files/initiatives/engineering-framework/2021/application-of-advanced-grid-scale-inverters-in-the-nem.pdf?la=en&hash=B4E20D68B23F66090ADA5FD47A50D904' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_7459bb294ca96520ab37b0d29b472352.setContent(html_a4f6f551a5a61e95040d9c50b9dff103);
+                var html_db55a7c4ac32b0561cea17d70efcc907 = $(`<div id="html_db55a7c4ac32b0561cea17d70efcc907" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> AEMO.P1<br>             <strong>Link:</strong> <a href='https://aemo.com.au/-/media/files/initiatives/engineering-framework/2021/application-of-advanced-grid-scale-inverters-in-the-nem.pdf?la=en&hash=B4E20D68B23F66090ADA5FD47A50D904' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_0b6b3c969745c71002006c67998a5609.setContent(html_db55a7c4ac32b0561cea17d70efcc907);
             
         
 
-        marker_4eb744cde3ee3d861d0439a5345f87e8.bindPopup(popup_7459bb294ca96520ab37b0d29b472352)
+        marker_f98392ac3d6a59f966c9c8a3b84f3f7b.bindPopup(popup_0b6b3c969745c71002006c67998a5609)
         ;
 
         
     
     
-            var marker_b56fc54937a51d0ef8d918e7f9ec4c5c = L.marker(
+            var marker_6fbe84659f4e24af0b0f0e1fe4112976 = L.marker(
                 [18.8987, -155.6659],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_8093c2b0cf349b16adc694cccde892dc = L.icon({
+        var custom_icon_cb05f7ac21092ff4777a8b0be305c5cf = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/x295nrtka8ojuhzu8594a/HECO_P2.png?rlkey=zuyrl49r5wl25s64anlbx5mu2\u0026st=zk0el2rh\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_b56fc54937a51d0ef8d918e7f9ec4c5c.setIcon(custom_icon_8093c2b0cf349b16adc694cccde892dc);
+        marker_6fbe84659f4e24af0b0f0e1fe4112976.setIcon(custom_icon_cb05f7ac21092ff4777a8b0be305c5cf);
         
     
-        var popup_915aadfd2939a64377f872aabe3bed7b = L.popup({
+        var popup_e57c786ac5354fd13ed469c8ac171fef = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a0c80e84d01c31ec3f7c75c6905e1268 = $(`<div id="html_a0c80e84d01c31ec3f7c75c6905e1268" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> HECO.P2<br>             <strong>Link:</strong> <a href='https://www.hawaiianelectric.com/documents/clean_energy_hawaii/selling_power_to_the_utility/competitive_bidding/20211015_exhibit_8_S3_hawaii_model_ESPA.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_915aadfd2939a64377f872aabe3bed7b.setContent(html_a0c80e84d01c31ec3f7c75c6905e1268);
+                var html_e65e050bf5965e3ae996a9ab93d82409 = $(`<div id="html_e65e050bf5965e3ae996a9ab93d82409" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> HECO.P2<br>             <strong>Link:</strong> <a href='https://www.hawaiianelectric.com/documents/clean_energy_hawaii/selling_power_to_the_utility/competitive_bidding/20211015_exhibit_8_S3_hawaii_model_ESPA.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_e57c786ac5354fd13ed469c8ac171fef.setContent(html_e65e050bf5965e3ae996a9ab93d82409);
             
         
 
-        marker_b56fc54937a51d0ef8d918e7f9ec4c5c.bindPopup(popup_915aadfd2939a64377f872aabe3bed7b)
+        marker_6fbe84659f4e24af0b0f0e1fe4112976.bindPopup(popup_e57c786ac5354fd13ed469c8ac171fef)
         ;
 
         
     
     
-            var marker_f847f9aead99e01f96ffa91ed96c3b8b = L.marker(
+            var marker_1106ad3c8d52926076707c3e4f634969 = L.marker(
                 [48.8575, 2.3514],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_c6f9425d7fbfa249a880b873b26ab2a2 = L.icon({
+        var custom_icon_92a25d1e241bb6faccc6bfcfc77b5218 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/8x7jzcgtdtawvgrpsojlg/OSMOSE_P1.png?rlkey=gtbvf8nxowkilqiakew4wv7ct\u0026st=bq2ha17b\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_f847f9aead99e01f96ffa91ed96c3b8b.setIcon(custom_icon_c6f9425d7fbfa249a880b873b26ab2a2);
+        marker_1106ad3c8d52926076707c3e4f634969.setIcon(custom_icon_92a25d1e241bb6faccc6bfcfc77b5218);
         
     
-        var popup_126cfa87a69e50a89c4cba917d783b1c = L.popup({
+        var popup_2dac72d1b66a2a3a629b3ae3358f3345 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_779b177a06f41c7882cd488d0ef17a12 = $(`<div id="html_779b177a06f41c7882cd488d0ef17a12" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> OSMOSE.P1<br>             <strong>Link:</strong> <a href='https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c55030e1&appId=PPGMS' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_126cfa87a69e50a89c4cba917d783b1c.setContent(html_779b177a06f41c7882cd488d0ef17a12);
+                var html_df35a8fd5918660ad0583248b89867e9 = $(`<div id="html_df35a8fd5918660ad0583248b89867e9" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> OSMOSE.P1<br>             <strong>Link:</strong> <a href='https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5c55030e1&appId=PPGMS' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_2dac72d1b66a2a3a629b3ae3358f3345.setContent(html_df35a8fd5918660ad0583248b89867e9);
             
         
 
-        marker_f847f9aead99e01f96ffa91ed96c3b8b.bindPopup(popup_126cfa87a69e50a89c4cba917d783b1c)
+        marker_1106ad3c8d52926076707c3e4f634969.bindPopup(popup_2dac72d1b66a2a3a629b3ae3358f3345)
         ;
 
         
     
     
-            var marker_5d59ee6215377fc66aedd26a88228172 = L.marker(
+            var marker_d9f7166f6a576470803edba1c034dd50 = L.marker(
                 [52.2823, -1.5849],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_31b31e78eb09f7d5065bfe4d8e9af1a2 = L.icon({
+        var custom_icon_e2dd8c232e90be6050760cb2d8dc50d2 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/4qrptbmyixvxnuyr69ntv/NGESO_P2.png?rlkey=lmiqsl1lsylewyq5boifly41i\u0026st=4ed355c7\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_5d59ee6215377fc66aedd26a88228172.setIcon(custom_icon_31b31e78eb09f7d5065bfe4d8e9af1a2);
+        marker_d9f7166f6a576470803edba1c034dd50.setIcon(custom_icon_e2dd8c232e90be6050760cb2d8dc50d2);
         
     
-        var popup_5b00ccd8703a1a0c426ec80da2a775aa = L.popup({
+        var popup_82c283776b785b4ac76398761f7976b6 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0755ec4f856e5808c61fd09694b64917 = $(`<div id="html_0755ec4f856e5808c61fd09694b64917" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NGESO.P2<br>             <strong>Link:</strong> <a href='https://www.neso.energy/document/278491/download' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_5b00ccd8703a1a0c426ec80da2a775aa.setContent(html_0755ec4f856e5808c61fd09694b64917);
+                var html_d175c60567a16f614cb0bf85e91085e8 = $(`<div id="html_d175c60567a16f614cb0bf85e91085e8" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NGESO.P2<br>             <strong>Link:</strong> <a href='https://www.neso.energy/document/278491/download' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_82c283776b785b4ac76398761f7976b6.setContent(html_d175c60567a16f614cb0bf85e91085e8);
             
         
 
-        marker_5d59ee6215377fc66aedd26a88228172.bindPopup(popup_5b00ccd8703a1a0c426ec80da2a775aa)
+        marker_d9f7166f6a576470803edba1c034dd50.bindPopup(popup_82c283776b785b4ac76398761f7976b6)
         ;
 
         
     
     
-            var marker_af7c641fa09cbe3d4c1b71e44f6048ee = L.marker(
+            var marker_1db5c95fa8e9a2e5fa60ebc02175cd53 = L.marker(
                 [-37.8136, 144.9631],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_cd3fda1a2ebe37d4580ef72111397093 = L.icon({
+        var custom_icon_20570f362d539fe4d722775e17989d2f = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/w5r2n9v1onfcfjh2upo1f/AEMO_P2.png?rlkey=yybo69pcf6zuzh1mrkavcxiul\u0026st=lfuyljxw\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_af7c641fa09cbe3d4c1b71e44f6048ee.setIcon(custom_icon_cd3fda1a2ebe37d4580ef72111397093);
+        marker_1db5c95fa8e9a2e5fa60ebc02175cd53.setIcon(custom_icon_20570f362d539fe4d722775e17989d2f);
         
     
-        var popup_cd08bf54a104395b5aa4616e625bfe9a = L.popup({
+        var popup_02370e8cd4025152ae3bd53f0020144d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_be5e82a08e405f507b4b1d8779e636c5 = $(`<div id="html_be5e82a08e405f507b4b1d8779e636c5" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> AEMO.P2<br>             <strong>Link:</strong> <a href='https://aemo.com.au/-/media/files/initiatives/engineering-framework/2021/application-of-advanced-grid-scale-inverters-in-the-nem.pdf?la=en&hash=B4E20D68B23F66090ADA5FD47A50D904' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_cd08bf54a104395b5aa4616e625bfe9a.setContent(html_be5e82a08e405f507b4b1d8779e636c5);
+                var html_ed66fbef779eb32cbdf595edf3520d05 = $(`<div id="html_ed66fbef779eb32cbdf595edf3520d05" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> AEMO.P2<br>             <strong>Link:</strong> <a href='https://aemo.com.au/-/media/files/initiatives/engineering-framework/2021/application-of-advanced-grid-scale-inverters-in-the-nem.pdf?la=en&hash=B4E20D68B23F66090ADA5FD47A50D904' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_02370e8cd4025152ae3bd53f0020144d.setContent(html_ed66fbef779eb32cbdf595edf3520d05);
             
         
 
-        marker_af7c641fa09cbe3d4c1b71e44f6048ee.bindPopup(popup_cd08bf54a104395b5aa4616e625bfe9a)
+        marker_1db5c95fa8e9a2e5fa60ebc02175cd53.bindPopup(popup_02370e8cd4025152ae3bd53f0020144d)
         ;
 
         
     
     
-            var marker_a920dc5f5b136a156bf400abeb8b71a3 = L.marker(
+            var marker_20b496d8e4837a67ceed92dbbcaed1cc = L.marker(
                 [60.1699, 24.9384],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_85d26ccb7977fffe0d0ad164ea917038 = L.icon({
+        var custom_icon_cbdf20babc2b295825096edaa237cacc = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/4fgt4mt2ei27jt3cebvvo/FINGRID_P1.png?rlkey=rye4h1ladtm3ah3z7hn7stb85\u0026st=hmjrec83\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_a920dc5f5b136a156bf400abeb8b71a3.setIcon(custom_icon_85d26ccb7977fffe0d0ad164ea917038);
+        marker_20b496d8e4837a67ceed92dbbcaed1cc.setIcon(custom_icon_cbdf20babc2b295825096edaa237cacc);
         
     
-        var popup_4f26f03ffbefea5c2adf8dc3e52ed791 = L.popup({
+        var popup_c978b596fcf3878b28d231dd4449388a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_cd254ce83902d2737f740c0905092051 = $(`<div id="html_cd254ce83902d2737f740c0905092051" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> FINGRID.P1<br>             <strong>Link:</strong> <a href='https://www.fingrid.fi/globalassets/dokumentit/fi/palvelut/kulutuksen-ja-tuotannon-liittaminen-kantaverkkoon/specific-study-requirements-for-grid-energy-storage-systems-en.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_4f26f03ffbefea5c2adf8dc3e52ed791.setContent(html_cd254ce83902d2737f740c0905092051);
+                var html_1ed9907315f73943dd77f735f910e411 = $(`<div id="html_1ed9907315f73943dd77f735f910e411" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> FINGRID.P1<br>             <strong>Link:</strong> <a href='https://www.fingrid.fi/globalassets/dokumentit/fi/palvelut/kulutuksen-ja-tuotannon-liittaminen-kantaverkkoon/specific-study-requirements-for-grid-energy-storage-systems-en.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_c978b596fcf3878b28d231dd4449388a.setContent(html_1ed9907315f73943dd77f735f910e411);
             
         
 
-        marker_a920dc5f5b136a156bf400abeb8b71a3.bindPopup(popup_4f26f03ffbefea5c2adf8dc3e52ed791)
+        marker_20b496d8e4837a67ceed92dbbcaed1cc.bindPopup(popup_c978b596fcf3878b28d231dd4449388a)
         ;
 
         
     
     
-            var marker_215c631d5a09c13731e20491eedd6fcf = L.marker(
+            var marker_f11e089ab0d090b85c9c465877c0f057 = L.marker(
                 [33.7501, -84.3885],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_6f61adb5e023733b782f3591a2486948 = L.icon({
+        var custom_icon_895f76943daaaadcb8c7920ea04ab507 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/y7djnevzb75prdkjs9obv/NERC_P1.png?rlkey=m2zokp0hjg5qvwptla2qanfd5\u0026st=0h91j8gg\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_215c631d5a09c13731e20491eedd6fcf.setIcon(custom_icon_6f61adb5e023733b782f3591a2486948);
+        marker_f11e089ab0d090b85c9c465877c0f057.setIcon(custom_icon_895f76943daaaadcb8c7920ea04ab507);
         
     
-        var popup_008116269f72838fe4726deda1a731fc = L.popup({
+        var popup_d112a612c331615965b6587ef4da7d3f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_12594a9e6223db277a9b656c97217ca9 = $(`<div id="html_12594a9e6223db277a9b656c97217ca9" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NERC.P1<br>             <strong>Link:</strong> <a href='https://www.nerc.com/comm/RSTC_Reliability_Guidelines/White_Paper_GFM_Functional_Specification.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_008116269f72838fe4726deda1a731fc.setContent(html_12594a9e6223db277a9b656c97217ca9);
+                var html_bef0945ae53c964ea14576c8e7548891 = $(`<div id="html_bef0945ae53c964ea14576c8e7548891" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> NERC.P1<br>             <strong>Link:</strong> <a href='https://www.nerc.com/comm/RSTC_Reliability_Guidelines/White_Paper_GFM_Functional_Specification.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_d112a612c331615965b6587ef4da7d3f.setContent(html_bef0945ae53c964ea14576c8e7548891);
             
         
 
-        marker_215c631d5a09c13731e20491eedd6fcf.bindPopup(popup_008116269f72838fe4726deda1a731fc)
+        marker_f11e089ab0d090b85c9c465877c0f057.bindPopup(popup_d112a612c331615965b6587ef4da7d3f)
         ;
 
         
     
     
-            var marker_5f89af3cfd6ed6542d739d58b4069bd9 = L.marker(
+            var marker_c7a2387a5882b8b5de670d786d2ddcfc = L.marker(
                 [-37.8136, 144.9631],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_92e8b512a0a48c25498b5deca8fb09e1 = L.icon({
+        var custom_icon_af118f8bd2e73a1003209336686d5098 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/a8ruv4se0l0u3truaagse/AEMO_P3.png?rlkey=fda8om27l4k1xj3kccfvfqwr5\u0026st=j03db9dq\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_5f89af3cfd6ed6542d739d58b4069bd9.setIcon(custom_icon_92e8b512a0a48c25498b5deca8fb09e1);
+        marker_c7a2387a5882b8b5de670d786d2ddcfc.setIcon(custom_icon_af118f8bd2e73a1003209336686d5098);
         
     
-        var popup_be8431b7bc47ba803aa77ceb7c728a4c = L.popup({
+        var popup_7ee4394ac71095df12eb9084731a9a87 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_de65039e77cf3b1773837e1f1c9624f6 = $(`<div id="html_de65039e77cf3b1773837e1f1c9624f6" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> AEMO.P3<br>             <strong>Link:</strong> <a href='https://aemo.com.au/-/media/files/initiatives/engineering-framework/2023/grid-forming-inverters-jan-2024.pdf?la=en&hash=7778A2249D8C29A95A2FADCD9AAA509D' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_be8431b7bc47ba803aa77ceb7c728a4c.setContent(html_de65039e77cf3b1773837e1f1c9624f6);
+                var html_ac4b5216ca58188305d2207c8782bbe4 = $(`<div id="html_ac4b5216ca58188305d2207c8782bbe4" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> AEMO.P3<br>             <strong>Link:</strong> <a href='https://aemo.com.au/-/media/files/initiatives/engineering-framework/2023/grid-forming-inverters-jan-2024.pdf?la=en&hash=7778A2249D8C29A95A2FADCD9AAA509D' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_7ee4394ac71095df12eb9084731a9a87.setContent(html_ac4b5216ca58188305d2207c8782bbe4);
             
         
 
-        marker_5f89af3cfd6ed6542d739d58b4069bd9.bindPopup(popup_be8431b7bc47ba803aa77ceb7c728a4c)
+        marker_c7a2387a5882b8b5de670d786d2ddcfc.bindPopup(popup_7ee4394ac71095df12eb9084731a9a87)
         ;
 
         
     
     
-            var marker_2c0247a491a1cef7be144dcf0d8fe632 = L.marker(
+            var marker_d2022a9497e910e0cc533963cd70ba2f = L.marker(
                 [50.1109, 8.6821],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_71b35de7536dd0c1686238d31ca63833 = L.icon({
+        var custom_icon_676f84a4d80eba4567064dbc89d8cc3a = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/rfdvwo8lpy5l9197x689z/VDE-FNN_P2.png?rlkey=691qcvaggtopu19sg0uglc4df\u0026st=f9j917d5\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_2c0247a491a1cef7be144dcf0d8fe632.setIcon(custom_icon_71b35de7536dd0c1686238d31ca63833);
+        marker_d2022a9497e910e0cc533963cd70ba2f.setIcon(custom_icon_676f84a4d80eba4567064dbc89d8cc3a);
         
     
-        var popup_f70c7b375c5ec88c375a2eaa4943fa94 = L.popup({
+        var popup_60aa8dd38eed239359596c5542507e8f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_193b61239d0666953fa910e62e569b9d = $(`<div id="html_193b61239d0666953fa910e62e569b9d" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> VDE FNN.P2<br>             <strong>Link:</strong> <a href='https://www.vde.com/resource/blob/2302434/7a6cf4ae811e789d599c10578a5025b9/netzbildende-eigenschaften-hinweis-download-data.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_f70c7b375c5ec88c375a2eaa4943fa94.setContent(html_193b61239d0666953fa910e62e569b9d);
+                var html_cb2223713f25a5f59f8c2300d44083e6 = $(`<div id="html_cb2223713f25a5f59f8c2300d44083e6" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> VDE FNN.P2<br>             <strong>Link:</strong> <a href='https://www.vde.com/resource/blob/2302434/7a6cf4ae811e789d599c10578a5025b9/netzbildende-eigenschaften-hinweis-download-data.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_60aa8dd38eed239359596c5542507e8f.setContent(html_cb2223713f25a5f59f8c2300d44083e6);
             
         
 
-        marker_2c0247a491a1cef7be144dcf0d8fe632.bindPopup(popup_f70c7b375c5ec88c375a2eaa4943fa94)
+        marker_d2022a9497e910e0cc533963cd70ba2f.bindPopup(popup_60aa8dd38eed239359596c5542507e8f)
         ;
 
         
     
     
-            var marker_36d436864b18c2d9b319822a32cb294e = L.marker(
+            var marker_ec9c02ee399a2bc424803b656d26e49b = L.marker(
                 [39.7474, -105.1282],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_deb73c307f254d1fddbc466682d2b9bd = L.icon({
+        var custom_icon_86113f21d2ed354c779a9c81d5e376e2 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/vrh1wj522r6uylwl019uv/UNIFI_P1.png?rlkey=kzfz5p80irsh8tydq32j18qtz\u0026st=igkn2mg5\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_36d436864b18c2d9b319822a32cb294e.setIcon(custom_icon_deb73c307f254d1fddbc466682d2b9bd);
+        marker_ec9c02ee399a2bc424803b656d26e49b.setIcon(custom_icon_86113f21d2ed354c779a9c81d5e376e2);
         
     
-        var popup_584445165f63af0f79108742a9416121 = L.popup({
+        var popup_a5e2953d60ea9729b661d5ab3d67cc0b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_270e5f2f7164a1810ca37302320abee4 = $(`<div id="html_270e5f2f7164a1810ca37302320abee4" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> UNIFI.P1<br>             <strong>Link:</strong> <a href='https://unificonsortium.org/work-products/' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_584445165f63af0f79108742a9416121.setContent(html_270e5f2f7164a1810ca37302320abee4);
+                var html_d244820d3ce122f256ce4a8f26ab3440 = $(`<div id="html_d244820d3ce122f256ce4a8f26ab3440" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> UNIFI.P1<br>             <strong>Link:</strong> <a href='https://unificonsortium.org/work-products/' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_a5e2953d60ea9729b661d5ab3d67cc0b.setContent(html_d244820d3ce122f256ce4a8f26ab3440);
             
         
 
-        marker_36d436864b18c2d9b319822a32cb294e.bindPopup(popup_584445165f63af0f79108742a9416121)
+        marker_ec9c02ee399a2bc424803b656d26e49b.bindPopup(popup_a5e2953d60ea9729b661d5ab3d67cc0b)
         ;
 
         
     
     
-            var marker_16aa4fbd190f8bbab9ecb11f92a93722 = L.marker(
+            var marker_dfd86678d351ebae278b7e6ed4b17b6c = L.marker(
                 [60.1699, 24.9384],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_1a18775f5b888e0880577f8f9d1e6e0e = L.icon({
+        var custom_icon_552d30f686474f90a35b983a63fd4ba9 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xf1pww5qprabl1zehpxyh/FINGRID_P2.png?rlkey=ijro95r2ikr59j7aiq82ql65a\u0026st=499ebzid\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_16aa4fbd190f8bbab9ecb11f92a93722.setIcon(custom_icon_1a18775f5b888e0880577f8f9d1e6e0e);
+        marker_dfd86678d351ebae278b7e6ed4b17b6c.setIcon(custom_icon_552d30f686474f90a35b983a63fd4ba9);
         
     
-        var popup_91ce99a5c98082ba0272da99d6b93183 = L.popup({
+        var popup_1066f5714439b5508dfb4498c83d388d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3f290c42879ecb8075a68cc22cc354b4 = $(`<div id="html_3f290c42879ecb8075a68cc22cc354b4" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> FINGRID.P2<br>             <strong>Link:</strong> <a href='https://www.fingrid.fi/kantaverkko/liitynta-kantaverkkoon/tekniset-vaatimukset/voimalaitoksia-ja-sahkovarastoja-koskevien-jarjestelmateknisten-vaatimusten-paivitys-2024/' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_91ce99a5c98082ba0272da99d6b93183.setContent(html_3f290c42879ecb8075a68cc22cc354b4);
+                var html_bb6f62ec46d83b659b77a2eb2cef8165 = $(`<div id="html_bb6f62ec46d83b659b77a2eb2cef8165" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> FINGRID.P2<br>             <strong>Link:</strong> <a href='https://www.fingrid.fi/kantaverkko/liitynta-kantaverkkoon/tekniset-vaatimukset/voimalaitoksia-ja-sahkovarastoja-koskevien-jarjestelmateknisten-vaatimusten-paivitys-2024/' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_1066f5714439b5508dfb4498c83d388d.setContent(html_bb6f62ec46d83b659b77a2eb2cef8165);
             
         
 
-        marker_16aa4fbd190f8bbab9ecb11f92a93722.bindPopup(popup_91ce99a5c98082ba0272da99d6b93183)
+        marker_dfd86678d351ebae278b7e6ed4b17b6c.bindPopup(popup_1066f5714439b5508dfb4498c83d388d)
         ;
 
         
     
     
-            var marker_66d221364107238c78014686685362d6 = L.marker(
+            var marker_a7243207a7ad33f24054c070190bd769 = L.marker(
                 [39.9784, -86.118],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_5ebbfb8240f5b463c0c24845b32d5727 = L.icon({
+        var custom_icon_f57bb5716cf9615b802935248ef228f7 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/h1d2huwvuqxvd6ukyf04h/MISO_P1.png?rlkey=uc71t8k1q1ih7ceqmjdap2aqr\u0026st=zyj1fuvr\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_66d221364107238c78014686685362d6.setIcon(custom_icon_5ebbfb8240f5b463c0c24845b32d5727);
+        marker_a7243207a7ad33f24054c070190bd769.setIcon(custom_icon_f57bb5716cf9615b802935248ef228f7);
         
     
-        var popup_a432f66bf1216f1848778ffd27de7616 = L.popup({
+        var popup_1933ecbb41637c0432178cd742423af5 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_4f57a5edba11c18dd23219f40b595159 = $(`<div id="html_4f57a5edba11c18dd23219f40b595159" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> MISO.P1<br>             <strong>Link:</strong> <a href='https://cdn.misoenergy.org/20240723%20IPWG%20Item%2004b%20DRAFT%20GFM%20BESS%20Performance%20Requirements%20Whitepaper%20(PAC-2024-2)_REDLINE639677.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_a432f66bf1216f1848778ffd27de7616.setContent(html_4f57a5edba11c18dd23219f40b595159);
+                var html_e5f0dd5096c009eec8ba15fa2c1c01ed = $(`<div id="html_e5f0dd5096c009eec8ba15fa2c1c01ed" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> MISO.P1<br>             <strong>Link:</strong> <a href='https://cdn.misoenergy.org/20240723%20IPWG%20Item%2004b%20DRAFT%20GFM%20BESS%20Performance%20Requirements%20Whitepaper%20(PAC-2024-2)_REDLINE639677.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_1933ecbb41637c0432178cd742423af5.setContent(html_e5f0dd5096c009eec8ba15fa2c1c01ed);
             
         
 
-        marker_66d221364107238c78014686685362d6.bindPopup(popup_a432f66bf1216f1848778ffd27de7616)
+        marker_a7243207a7ad33f24054c070190bd769.bindPopup(popup_1933ecbb41637c0432178cd742423af5)
         ;
 
         
     
     
-            var marker_0ebf041f240a4548f0d1314501e85342 = L.marker(
+            var marker_bd8221fdebe96f34f8d7c61ed32e6e5f = L.marker(
                 [46.0569, 14.5058],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_4571138b850de1223cb165cd1c0363a0 = L.icon({
+        var custom_icon_218a282336c1c91adb1bf3a856414cef = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/xb999lmrhkos4m6tc78xp/ACER_P1.png?rlkey=tu3b9qe9k4uoxq3c7fdxlxoev\u0026st=op8rw3qb\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_0ebf041f240a4548f0d1314501e85342.setIcon(custom_icon_4571138b850de1223cb165cd1c0363a0);
+        marker_bd8221fdebe96f34f8d7c61ed32e6e5f.setIcon(custom_icon_218a282336c1c91adb1bf3a856414cef);
         
     
-        var popup_bc0e7818cee8230b033f5f358b1c1c93 = L.popup({
+        var popup_e942d633d67d2502b403b65dc64ba9f7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_57485a2f16fd38c79b98fe80c5888974 = $(`<div id="html_57485a2f16fd38c79b98fe80c5888974" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ACER.P1<br>             <strong>Link:</strong> <a href='https://www.acer.europa.eu/sites/default/files/documents/Recommendations/ACER_Recommendation_03-2023_NC_RfG_DC.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_bc0e7818cee8230b033f5f358b1c1c93.setContent(html_57485a2f16fd38c79b98fe80c5888974);
+                var html_15f9c191964046ce7f006963cfe5293f = $(`<div id="html_15f9c191964046ce7f006963cfe5293f" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ACER.P1<br>             <strong>Link:</strong> <a href='https://www.acer.europa.eu/sites/default/files/documents/Recommendations/ACER_Recommendation_03-2023_NC_RfG_DC.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_e942d633d67d2502b403b65dc64ba9f7.setContent(html_15f9c191964046ce7f006963cfe5293f);
             
         
 
-        marker_0ebf041f240a4548f0d1314501e85342.bindPopup(popup_bc0e7818cee8230b033f5f358b1c1c93)
+        marker_bd8221fdebe96f34f8d7c61ed32e6e5f.bindPopup(popup_e942d633d67d2502b403b65dc64ba9f7)
         ;
 
         
     
     
-            var marker_3ffb40c4e258e9825c1f7d4ccefae488 = L.marker(
+            var marker_aba76d3a28b3c0a9c2997e9e18294210 = L.marker(
                 [50.5039, 4.4699],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_8b234877cb39ee07475f7db4616e043a = L.icon({
+        var custom_icon_66191efb831ea634ee798acb6c7a3870 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/cayvgleq3hj61y3rh3lsk/ENTSO-E_P2.png?rlkey=attcb69myjzau1ixiybhkb2be\u0026st=i5c6qohe\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_3ffb40c4e258e9825c1f7d4ccefae488.setIcon(custom_icon_8b234877cb39ee07475f7db4616e043a);
+        marker_aba76d3a28b3c0a9c2997e9e18294210.setIcon(custom_icon_66191efb831ea634ee798acb6c7a3870);
         
     
-        var popup_8844f4c2d8a800ac941f3f41376876bc = L.popup({
+        var popup_6b6474f71b1aff0ce7cc4b6046cef461 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6db9a61208e1e778b9c575e59b16823a = $(`<div id="html_6db9a61208e1e778b9c575e59b16823a" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ENTSO-E.P2<br>             <strong>Link:</strong> <a href='https://eepublicdownloads.entsoe.eu/clean-documents/Publications/SOC/20240503_First_interim_report_in_technical_requirements.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_8844f4c2d8a800ac941f3f41376876bc.setContent(html_6db9a61208e1e778b9c575e59b16823a);
+                var html_8215fddc9ac22277b387313f09e3e9be = $(`<div id="html_8215fddc9ac22277b387313f09e3e9be" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ENTSO-E.P2<br>             <strong>Link:</strong> <a href='https://eepublicdownloads.entsoe.eu/clean-documents/Publications/SOC/20240503_First_interim_report_in_technical_requirements.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_6b6474f71b1aff0ce7cc4b6046cef461.setContent(html_8215fddc9ac22277b387313f09e3e9be);
             
         
 
-        marker_3ffb40c4e258e9825c1f7d4ccefae488.bindPopup(popup_8844f4c2d8a800ac941f3f41376876bc)
+        marker_aba76d3a28b3c0a9c2997e9e18294210.bindPopup(popup_6b6474f71b1aff0ce7cc4b6046cef461)
         ;
 
         
     
     
-            var marker_51a7fd159e175503630188dda8a89a8c = L.marker(
+            var marker_89e5a104c0d21899c1fa2e63fa25c42c = L.marker(
                 [30.2672, -97.7431],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_7d434049eb7d0626bc4806559a45dc91 = L.icon({
+        var custom_icon_abf4f9d2413fa77163b650b5fbfc1013 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/vtvjwpujaxgtoy28310ie/ERCOT_P1.png?rlkey=83g4punorft31aar2id193yqh\u0026st=jp5ohqpj\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_51a7fd159e175503630188dda8a89a8c.setIcon(custom_icon_7d434049eb7d0626bc4806559a45dc91);
+        marker_89e5a104c0d21899c1fa2e63fa25c42c.setIcon(custom_icon_abf4f9d2413fa77163b650b5fbfc1013);
         
     
-        var popup_3ba79f2a490ef11d9ba2cacb088f46dd = L.popup({
+        var popup_995ab0275bdc49dbf63794d42fe669fb = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_e658c762b5587bfbe54f676c0eb44fec = $(`<div id="html_e658c762b5587bfbe54f676c0eb44fec" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ERCOT.P1<br>             <strong>Link:</strong> <a href='https://www.ercot.com/files/docs/2024/09/16/ERCOT%20Advanced%20Grid%20Support%20ESR%20Test%20Requirement_.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_3ba79f2a490ef11d9ba2cacb088f46dd.setContent(html_e658c762b5587bfbe54f676c0eb44fec);
+                var html_bfad1095259b0c53c0b9a03e7ac15052 = $(`<div id="html_bfad1095259b0c53c0b9a03e7ac15052" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> ERCOT.P1<br>             <strong>Link:</strong> <a href='https://www.ercot.com/files/docs/2024/09/16/ERCOT%20Advanced%20Grid%20Support%20ESR%20Test%20Requirement_.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_995ab0275bdc49dbf63794d42fe669fb.setContent(html_bfad1095259b0c53c0b9a03e7ac15052);
             
         
 
-        marker_51a7fd159e175503630188dda8a89a8c.bindPopup(popup_3ba79f2a490ef11d9ba2cacb088f46dd)
+        marker_89e5a104c0d21899c1fa2e63fa25c42c.bindPopup(popup_995ab0275bdc49dbf63794d42fe669fb)
         ;
 
         
     
     
-            var marker_c2dcbac904305e46d13a0dcf7b2164c3 = L.marker(
+            var marker_45646ed7ffe7352300d50a9a9fa588a0 = L.marker(
                 [-33.4489, -70.6693],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_a3f7fb076847e08a2d636295a0428ed4 = L.icon({
+        var custom_icon_6bcb13679a47a90cdbea2e1f9262afd8 = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/busi738oduj8o3kwf0wvo/CEN_P1.png?rlkey=lhj0irfnq2a51yqiizs146uzj\u0026st=uxvaifwk\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_c2dcbac904305e46d13a0dcf7b2164c3.setIcon(custom_icon_a3f7fb076847e08a2d636295a0428ed4);
+        marker_45646ed7ffe7352300d50a9a9fa588a0.setIcon(custom_icon_6bcb13679a47a90cdbea2e1f9262afd8);
         
     
-        var popup_bb93704b749e7d661c9f04c98a776156 = L.popup({
+        var popup_30835bd610933d447e8dcd84f2f673b2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0ac6ac51d1eb9952f61011d6b362d830 = $(`<div id="html_0ac6ac51d1eb9952f61011d6b362d830" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> CEN.P1<br>             <strong>Link:</strong> <a href='https://www.coordinador.cl/wp-content/uploads/2024/10/Requisitos-Minimos-para-IBR-GFM-Rev.0-30.Oct_.2024-1.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_bb93704b749e7d661c9f04c98a776156.setContent(html_0ac6ac51d1eb9952f61011d6b362d830);
+                var html_fe9e6bca14978faff43003971952e071 = $(`<div id="html_fe9e6bca14978faff43003971952e071" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> CEN.P1<br>             <strong>Link:</strong> <a href='https://www.coordinador.cl/wp-content/uploads/2024/10/Requisitos-Minimos-para-IBR-GFM-Rev.0-30.Oct_.2024-1.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_30835bd610933d447e8dcd84f2f673b2.setContent(html_fe9e6bca14978faff43003971952e071);
             
         
 
-        marker_c2dcbac904305e46d13a0dcf7b2164c3.bindPopup(popup_bb93704b749e7d661c9f04c98a776156)
+        marker_45646ed7ffe7352300d50a9a9fa588a0.bindPopup(popup_30835bd610933d447e8dcd84f2f673b2)
         ;
 
         
     
     
-            var marker_1757d9a013163bdf85380a5c3d78d1c9 = L.marker(
+            var marker_cc972e5fea8320b007b9164865c9b523 = L.marker(
                 [-33.4489, -70.6693],
                 {
 }
-            ).addTo(marker_cluster_e2241eb60737d243300ce56b390f251c);
+            ).addTo(marker_cluster_40fafcb7a9c983195550996b7569b379);
         
     
-        var custom_icon_3b6bca0c56bbd353327037918ea422fa = L.icon({
+        var custom_icon_2df752ea072e729130d27d46fe50915c = L.icon({
   "iconUrl": "https://www.dropbox.com/scl/fi/8f3atrc8dnesas380wues/G-PST_P1.png?rlkey=2l62hq5bi1u43bv5a334r1qqr\u0026st=o0po4gu1\u0026raw=1",
   "iconSize": [100, 135],
 });
-        marker_1757d9a013163bdf85380a5c3d78d1c9.setIcon(custom_icon_3b6bca0c56bbd353327037918ea422fa);
+        marker_cc972e5fea8320b007b9164865c9b523.setIcon(custom_icon_2df752ea072e729130d27d46fe50915c);
         
     
-        var popup_fa116c82a61c3eb892561e05a211bd9e = L.popup({
+        var popup_33050f4303e5a9e0f36dc8d135fae120 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_51c71baa1aab41fe2e789fc9d5be8c17 = $(`<div id="html_51c71baa1aab41fe2e789fc9d5be8c17" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> G-PST.P1<br>             <strong>Link:</strong> <a href='https://www.nrel.gov/docs/fy25osti/91792.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
-                popup_fa116c82a61c3eb892561e05a211bd9e.setContent(html_51c71baa1aab41fe2e789fc9d5be8c17);
+                var html_a4225716196d5f97ff1fe99213dd06a0 = $(`<div id="html_a4225716196d5f97ff1fe99213dd06a0" style="width: 100.0%; height: 100.0%;">         <div style="font-size: 14px;">             <strong>Name:</strong> G-PST.P1<br>             <strong>Link:</strong> <a href='https://www.nrel.gov/docs/fy25osti/91792.pdf' target='_blank'>Here</a>         </div>         </div>`)[0];
+                popup_33050f4303e5a9e0f36dc8d135fae120.setContent(html_a4225716196d5f97ff1fe99213dd06a0);
             
         
 
-        marker_1757d9a013163bdf85380a5c3d78d1c9.bindPopup(popup_fa116c82a61c3eb892561e05a211bd9e)
+        marker_cc972e5fea8320b007b9164865c9b523.bindPopup(popup_33050f4303e5a9e0f36dc8d135fae120)
         ;
 
         
     
     
-            marker_cluster_e2241eb60737d243300ce56b390f251c.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
+            marker_cluster_40fafcb7a9c983195550996b7569b379.addTo(map_d8548aec820915290fece49224a49cbd);
         
     
-            var layer_control_cb77af7d4615f6d3ac90def9d1a227c2_layers = {
+            var layer_control_9886827cb9202de3dd9fe5f3bdddb677_layers = {
                 base_layers : {
                 },
                 overlays :  {
-                    "Grid-Forming Projects" : marker_cluster_2fe992a651fa2a421e558241c3c15aed,
-                    "Policy/Standards Documents" : marker_cluster_e2241eb60737d243300ce56b390f251c,
+                    "Grid-Forming Projects" : marker_cluster_82d093569211c807a75e436b84a09dd1,
+                    "Policy/Standards Documents" : marker_cluster_40fafcb7a9c983195550996b7569b379,
                 },
             };
-            let layer_control_cb77af7d4615f6d3ac90def9d1a227c2 = L.control.layers(
-                layer_control_cb77af7d4615f6d3ac90def9d1a227c2_layers.base_layers,
-                layer_control_cb77af7d4615f6d3ac90def9d1a227c2_layers.overlays,
+            let layer_control_9886827cb9202de3dd9fe5f3bdddb677 = L.control.layers(
+                layer_control_9886827cb9202de3dd9fe5f3bdddb677_layers.base_layers,
+                layer_control_9886827cb9202de3dd9fe5f3bdddb677_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_92ba05b7add7a759a9483a96b1d534c6);
+            ).addTo(map_d8548aec820915290fece49224a49cbd);
 
-        
-    
-            tile_layer_ee80ac8bbd89c222277e781e5c72549a.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
-        
-    
-            marker_cluster_6b4d21486ace961068532e8c10a7dd9b.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
-        
-    
-            marker_cluster_b76cb03edacb5487842743198219e831.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
-        
-    
-            marker_cluster_2fe992a651fa2a421e558241c3c15aed.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
-        
-    
-            marker_cluster_e2241eb60737d243300ce56b390f251c.addTo(map_92ba05b7add7a759a9483a96b1d534c6);
         
 </script>
 </html>
